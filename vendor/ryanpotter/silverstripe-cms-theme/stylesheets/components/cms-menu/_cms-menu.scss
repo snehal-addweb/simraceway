@@ -1,0 +1,18 @@
+/*
+|--------------------------------------------------------------------------
+| CMS Menu
+|--------------------------------------------------------------------------
+*/
+
+$cms-menu-width: 18.4rem;
+
+.cms {
+  .cms-menu {
+    width: $cms-menu-width !important; // Important to override JS
+  }
+
+  // Remove this in css, since subsites overrides the template.
+  .cms-panel-toggle {
+    display: none !important;
+  }
+}
