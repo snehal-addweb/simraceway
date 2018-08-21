@@ -53,11 +53,13 @@ class Events extends Page
 {
     private static $has_many = [
         'AddEvent' => AddEvent::class,
-        'Client' => Client::class
+        'Client' => Client::class,
+        'AddNewGetInvolved' => AddNewGetInvolved::class
     ];
     private static $allowed_children = [
         AddEvent::class,
-        Client::class
+        Client::class,
+        AddNewGetInvolved::class
     ];
     private static $many_many = [
         'HomePhoto' => Image::class,
