@@ -1,0 +1,4 @@
+Events:
+  rules:
+    'events/upload': 'EventController'
+
