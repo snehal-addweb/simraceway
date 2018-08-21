@@ -1,0 +1,1555 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sett",
+				"settings_data"
+			],
+			[
+				"clas",
+				"classes"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"sele",
+				"select2"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"main",
+				"main_data"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"sea",
+				"search_header"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"institu",
+				"Institution"
+			],
+			[
+				"stat",
+				"state"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/_config/theme.yml",
+			"settings":
+			{
+				"buffer_size": 141,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/Submission/SubmittedForm.php",
+			"settings":
+			{
+				"buffer_size": 5399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/Events.php",
+			"settings":
+			{
+				"buffer_size": 3164,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/sim.sublime-project",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/EventSubmittedForm.php",
+			"settings":
+			{
+				"buffer_size": 5424,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/Submission/SubmittedFormField.php",
+			"settings":
+			{
+				"buffer_size": 2626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/UserDefinedForm.php",
+			"settings":
+			{
+				"buffer_size": 649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Control/UserDefinedFormController.php",
+			"settings":
+			{
+				"buffer_size": 18764,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/UserForm.php",
+			"settings":
+			{
+				"buffer_size": 14645,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/siteconfig/code/SiteConfig.php",
+			"settings":
+			{
+				"buffer_size": 16882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> /home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/Events.php\n\t|+| 46\n",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 195.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/app",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/public",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/public/resources"
+	],
+	"file_history":
+	[
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/sim.sublime-project",
+		"/home/addweb/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/Events.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/css/layout.css",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/templates/Includes/Header.ss",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/framework/client/styles/debug.css",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/cms/code/Controllers/SilverStripeNavigator.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/.env",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/cms/code/Controllers/ContentController.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/templates/Layout/Page.ss",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/siteconfig/code/SiteConfig.php",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media-stockbased-dev/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutPane/Review.php",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/docroot/modules/contrib/commerce/modules/checkout/src/Plugin/Commerce/CheckoutPane/Review.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/templates/Includes/Footer.ss",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/public/resources/themes/simple/css/reset.css",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/composer.json",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/silverstripe.log",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/public/resources/themes/simple/css/layout.css",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/embed/embed/src/Adapters/File.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/css/reset.css",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/themes/simple/templates/Includes/Navigation.ss",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php",
+		"/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/siteconfig/lang/en.yml",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/app/Http/Controllers/Auth/RegisterController.php",
+		"/home/addweb/Downloads/MVC_DEMo/index.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/public/assets/error-404.html",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/silverstripe.log",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/vendor/silverstripe/custom/css/comments.css",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/vendor/silverstripe/framework/src/View/Requirements_Backend.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/public/resources/vendor/silverstripe/admin/client/dist/js/vendor.js",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/.tx/config",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/_config/extensions.yml",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/_config/routes.yml",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/_config/legacy.yml",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/code/Extension/UpgradePolymorphicExtension.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/code/Control/UserDefinedFormController.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe1/vendor/silverstripe/custom/code/Extension/UserFormFieldEditorExtension.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/app/_config/theme.yml",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/seeds/UsersTableSeeder.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/seeds/RolesTableSeeder.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/2018_08_01_095524_update_users_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/2018_08_01_094945_create_roles_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/2018_07_31_insert_users.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/2018_08_01_create_roles_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/test/2018_08_01_create_roles_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/test/2018_07_31_insert_users.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/storage/framework/views/e1c41489053841414786ce6923313aa3919a4203.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/vendor/symfony/console/Output/Output.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/2018_07_31_122024_update_users_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/database/migrations/test/2018_07_31_122024_update_users_table.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/resources/dashboard.blade.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/resources/views/layouts/app.blade.php",
+		"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports/resources/views/layouts/objects_report/header.blade.php",
+		"/home/addweb/Drupal8-vagrant/web/silverstripe/vendor/ryanpotter/silverstripe-cms-theme/lang/en.yml",
+		"/home/addweb/Drupal8-vagrant/web/html/Training/js/submitfrombutton.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/models/Memorial.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/Memorials.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/components/MemorialSearch.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/components/MemorialSearchList.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/modules/cms/classes/Controller.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/models/memorial/fields.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/saurabhdhariwal/notify/Plugin.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/models/institution/fields.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/controllers/Geocoder.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/composer.json",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/composer.lock",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/models/Institution.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/saurabhdhariwal/notify/controllers/Notify.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/jorgeandrade/subscribe/models/Subscriber.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/jorgeandrade/subscribe/controllers/Subscribers.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/saurabhdhariwal/notify/models/notify/columns.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/saurabhdhariwal/notify/models/Notify.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/modules/system/models/MailTemplate.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/config/database.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/Plugin.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/themes/frontend/pages/blog/index.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/notify/Plugin.php",
+		"/home/addweb/Drupal8-vagrant/web/html/takadimi/src/cms/plugins/takadimi/api/controllers/Teachers.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/models/GeocoderSettings.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/controllers/Memorials.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/notify/README.md",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/notify/notifyrules/SendMailTemplateAction.php",
+		"/home/addweb/Desktop/snehal/config-split.txt",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/notify/notifyrules/sendmailtemplateaction/fields.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/jorgeandrade/subscribe/Plugin.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/jorgeandrade/subscribe/components/Subscriber.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/modules/backend/classes/NavigationManager.php",
+		"/home/addweb/Desktop/snehal/woocommerce-4over/woocommerce-4over.php",
+		"/home/addweb/Drupal8-vagrant/web/html/testedrecruits/index.php",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/docroot/modules/custom/kenmedia_nextengine/src/NE.php",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/docroot/modules/custom/kenmedia_nextengine/src/EventSubscriber/OrderCompleteSubscriber.php",
+		"/home/addweb/Downloads/PHP SQUAD Training/questions/javascript/JSAssignment.txt",
+		"/home/addweb/Drupal8-vagrant/web/html/snehal/hash.php",
+		"/tmp/fz3temp-1/style.css",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/config/sync/webform.webform.contact.yml",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/config/sync/contact.form.personal.yml",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/docroot/modules/custom/commerce_webmoney/commerce_webmoney.module",
+		"/home/addweb/Drupal8-vagrant/web/docroot/ken-media/docroot/modules/custom/commerce_webmoney/src/Controller/ResponseHandler.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/formwidgets/Memorialbox.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/formwidgets/Blogbox.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/formwidgets/memorialbox/partials/_widget.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/blog/models/Post.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/Plugin.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/formwidgets/blogbox/partials/_widget.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/classes/MenuExtender.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/models/traits/MemorialMenu.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/institutions/models/traits/InstitutionsMenu.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/memorials/config_form.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/memorials/update.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/persons/update.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/persons/create.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/controllers/images/update.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/models/geocodersettings/fields.yaml",
+		"/home/addweb/Drupal8-vagrant/web/html/dusk/app/Providers/AppServiceProvider.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/models/Person.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/formwidgets/RevisionHistory.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/api/routes.php",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/themes/frontend/pages/memorials-details.htm",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/.env",
+		"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials/traits/MemorialMenu.php",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/routes/web.php",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/resources/views/front/index.blade.php",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/routes/api.php",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/resources/assets/js/app.js",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/public/js/app.js",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/app/Http/Controllers/FilmController.php",
+		"/home/addweb/Drupal8-vagrant/web/html/laravel-demo/storage/logs/laravel.log"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"/home/addweb/Drupal8-vagrant/web/public/simraceway",
+			"/home/addweb/Drupal8-vagrant/web/silverstripe",
+			"/home/addweb/Drupal8-vagrant/web/silverstripe1",
+			"/home/addweb/Drupal8-vagrant/web/silverstripe",
+			"/home/addweb/Drupal8-vagrant/web/public/open.cr_reports",
+			"/home/addweb/Drupal8-vagrant/web/silverstripe",
+			"/home/addweb/Drupal8-vagrant/web/html/denkmalradar",
+			"/home/addweb/Drupal8-vagrant/web/html/takadimi",
+			"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/rainlab/notify",
+			"/home/addweb/Drupal8-vagrant/web/docroot/ken-media",
+			"/home/addweb/Drupal8-vagrant/web/html/denkmalradar",
+			"/home/addweb/Drupal8-vagrant/web/html/commentwithlaravelandvue",
+			"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/",
+			"/home/addweb/Drupal8-vagrant/web/html/denkmalradar/src/cms/plugins/denkmalradar/memorials"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getCMSValidator",
+			"EventSubmittedForm.php",
+			"Button",
+			"kiriban_product_id",
+			".footer a.brand",
+			".footer a",
+			"SITETAGLINE",
+			"Title",
+			"footer",
+			"contentinfo",
+			"$Content",
+			"standings-and-results/",
+			"calendar/",
+			".brand p",
+			".brand h1",
+			".header",
+			"class=\"header\"",
+			"$Layout",
+			"Simple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)\nChange it, enhance it and most importantly enjoy it!",
+			"<!--\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\nSimple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)\nChange it, enhance it and most importantly enjoy it!\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n-->",
+			".typography table td,",
+			".typography table td, .typography table th",
+			"typography img",
+			"roles",
+			"artist_objects",
+			"Facebook",
+			"First Name",
+			"DateExpiry",
+			"SilverStripe - Add page",
+			"numericLabelTmpl",
+			"pageTypes",
+			"Choose page type",
+			"STEP 1",
+			"STEP 2.",
+			"STEP 2.\n",
+			"UserForms",
+			"EscapedComment",
+			"Choose page type",
+			"simple",
+			"PageTypes",
+			"Under another page",
+			"Choose where to create this page\n",
+			"html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video",
+			"jquery.flexslider.js",
+			"Choose where to create this page",
+			"ANYONE",
+			"Only these groups (choose from list)",
+			"TABMAIN",
+			"Main",
+			"tabMain",
+			"Main",
+			"Twitter",
+			"SearchForm",
+			"Allow comment",
+			"viewersOptionsField",
+			"Level page",
+			"subpage",
+			"Page location",
+			"Allow Comments",
+			"Logo\n",
+			"PRO menu (only registered users)",
+			"body",
+			"report/artist_awards",
+			"report/artist_awards\\",
+			"footer",
+			"_includes_header",
+			"id=\"header\"",
+			"header",
+			"artist_objects",
+			"form-group field text",
+			"class=\"form-group field text\"",
+			"SITETITLE",
+			"img",
+			"$Title",
+			"SITENAMEDEFAULT",
+			"SITETITLE",
+			"Title",
+			"SITETITLE",
+			"Site title\n",
+			"time()",
+			"forgotPasswordMessage",
+			"Zommbie",
+			"params['address']",
+			"params['state']",
+			"class CurlHttpAdapter",
+			"ivory\\HttpAdapter",
+			"CurlHttpAdapter",
+			"message",
+			"vars",
+			"subscriber",
+			"subscribers",
+			"Mail",
+			"class Controller",
+			"Event::fire",
+			"Event::fire('auth.login', [$user]);\nEvent::fire('auth.login', [$user]);",
+			"isInGeoBounds",
+			"FILTER_MAX_DISTANCE",
+			"FILTER_LOCATION",
+			"locationToLatLng",
+			"group",
+			"Event::listen('auth.login",
+			"Event::fire",
+			"Event::listen",
+			"A user is activated",
+			"Add notification rule\nAdd notification rule",
+			"kiriban",
+			"media",
+			"unit_price",
+			"submit",
+			"nextengine",
+			"お問い合わせが完了致しました。ありがとうございました",
+			"blog_post_id",
+			"\n        ",
+			"}\n",
+			"memorialsAsContact",
+			"contact_id",
+			"memorialsAsContact",
+			"all-denkmalradar-memorials",
+			"lng",
+			"memorialdetails",
+			"getMemorialDetailsUrl",
+			"resolveMenuItem",
+			"use Denkmalradar\\Memorials\\Models\\Traits\\MemorialMenu;",
+			"all-denkmalradar-memorials",
+			"country",
+			"app",
+			"laravelData",
+			"description"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<div ",
+			"</div>",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/_config/theme.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/Submission/SubmittedForm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5399,
+								5399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/Events.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1944,
+								1944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1008.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/sim.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/app/src/EventSubmittedForm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/Submission/SubmittedFormField.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Model/UserDefinedForm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 84.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/Control/UserDefinedFormController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								905
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2812.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/userforms/code/UserForm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9188,
+								9188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/addweb/Drupal8-vagrant/web/public/simraceway/vendor/silverstripe/siteconfig/code/SiteConfig.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2350,
+								2350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1764.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sim.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user",
+				"vendor/silverstripe/userforms/code/Model/UserDefinedForm.php"
+			],
+			[
+				"site",
+				"vendor/silverstripe/siteconfig/code/SiteConfig.php"
+			],
+			[
+				"e",
+				"app/src/Events.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"stan",
+				"vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php"
+			],
+			[
+				"na",
+				"themes/simple/templates/Includes/Navigation.ss"
+			],
+			[
+				"nav",
+				"themes/simple/templates/Includes/Navigation.ss"
+			],
+			[
+				"lay",
+				"public/resources/themes/simple/css/layout.css"
+			],
+			[
+				"reset",
+				"public/resources/themes/simple/css/reset.css"
+			],
+			[
+				"foo",
+				"themes/simple/templates/Includes/Footer.ss"
+			],
+			[
+				"content",
+				"vendor/silverstripe/cms/code/Controllers/ContentController.php"
+			],
+			[
+				"layout.ss",
+				"themes/simple/templates/Layout/Page.ss"
+			],
+			[
+				".en",
+				".env"
+			],
+			[
+				"layo",
+				"themes/simple/css/layout.css"
+			],
+			[
+				"forg",
+				"app/Http/Controllers/Auth/ForgotPasswordController.php"
+			],
+			[
+				"registec",
+				"app/Http/Controllers/Auth/RegisterController.php"
+			],
+			[
+				"hae",
+				"themes/simple/templates/Includes/Header.ss"
+			],
+			[
+				"navi",
+				"themes/simple/templates/Includes/Navigation.ss"
+			],
+			[
+				"heade",
+				"themes/simple/templates/Includes/Header.ss"
+			],
+			[
+				"sidebarmenu",
+				"themes/simple/templates/Includes/SidebarMenu.ss"
+			],
+			[
+				"side",
+				"themes/simple/templates/Includes/SideBar.ss"
+			],
+			[
+				"ty",
+				"themes/simple/css/typography.css"
+			],
+			[
+				"requirements_backend",
+				"vendor/silverstripe/framework/src/View/Requirements_Backend.php"
+			],
+			[
+				"comments.css",
+				"vendor/silverstripe/custom/css/comments.css"
+			],
+			[
+				"us",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"la",
+				"storage/logs/laravel.log"
+			],
+			[
+				"_upl",
+				"resources/views/layouts/spa_upload_variables.php"
+			],
+			[
+				"_up",
+				"resources/views/layouts/deu_upload_variables.php"
+			],
+			[
+				"_uplo",
+				"resources/views/layouts/eng_upload_variables.php"
+			],
+			[
+				"con",
+				"bootstrap/cache/config.php"
+			],
+			[
+				"home_",
+				"resources/views/layouts/home_header.blade.php"
+			],
+			[
+				"register",
+				"app/Http/Controllers/Auth/RegisterController.php"
+			],
+			[
+				"regi",
+				"resources/views/register.blade.php"
+			],
+			[
+				"we",
+				"routes/web.php"
+			],
+			[
+				"cus",
+				"public/design/css/custom.css"
+			],
+			[
+				"seed",
+				"database/seeds/RolesTableSeeder.php"
+			],
+			[
+				"use",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"home_h",
+				"resources/views/layouts/home_header.blade.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"silverstripe.log",
+				"silverstripe.log"
+			],
+			[
+				"sitec",
+				"vendor/silverstripe/siteconfig/code/SiteConfig.php"
+			],
+			[
+				".e",
+				".env"
+			],
+			[
+				"dbdate.php",
+				"vendor/silverstripe/framework/src/ORM/FieldType/DBDate.php"
+			],
+			[
+				"index.php",
+				"public/index.php"
+			],
+			[
+				"sitetr",
+				"vendor/silverstripe/cms/code/Model/SiteTree.php"
+			],
+			[
+				"errorpa",
+				"vendor/silverstripe/error1page /src/ErrorPage.php"
+			],
+			[
+				"error.",
+				"vendor/webonyx/graphql-php/src/Error.php"
+			],
+			[
+				"silverstripe/comments/extensions/commentsextension",
+				"vendor/silverstripe/comments/src/Extensions/CommentsExtension.php"
+			],
+			[
+				"userde",
+				"vendor/silverstripe/userforms/code/Model/UserDefinedForm.php"
+			],
+			[
+				"page",
+				"themes/silverware-theme/templates/Page.ss"
+			],
+			[
+				"cmspa",
+				"vendor/silverstripe/cms/code/Controllers/CMSPagesController.php"
+			],
+			[
+				"upl",
+				"app/Http/Controllers/UploadController.php"
+			],
+			[
+				"home",
+				"resources/views/layouts/home_header.blade.php"
+			],
+			[
+				"dash",
+				"resources/views/dashboard.blade.php"
+			],
+			[
+				"regiser",
+				"app/Http/Controllers/Auth/RegisterController.php"
+			],
+			[
+				"lar",
+				"storage/logs/laravel.log"
+			],
+			[
+				"profile",
+				"resources/views/profile.blade.php"
+			],
+			[
+				"regis",
+				"resources/views/register.blade.php"
+			],
+			[
+				"lara",
+				"storage/logs/laravel.log"
+			],
+			[
+				"database",
+				"database/seeds/DatabaseSeeder.php"
+			],
+			[
+				"profil",
+				"resources/views/profile.blade.php"
+			],
+			[
+				"loginc",
+				"app/Http/Controllers/Auth/LoginController.php"
+			],
+			[
+				"profi",
+				"resources/views/profile.blade.php"
+			],
+			[
+				"e1c41489053841414786ce6923313aa3919a4203",
+				"storage/framework/views/e1c41489053841414786ce6923313aa3919a4203.php"
+			],
+			[
+				"userc",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"migrat",
+				"vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php"
+			],
+			[
+				"deu_up",
+				"resources/views/layouts/deu_upload_variables.php"
+			],
+			[
+				"spa_up",
+				"resources/views/layouts/spa_upload_variables.php"
+			],
+			[
+				"pro",
+				"resources/views/profile.blade.php"
+			],
+			[
+				"cust",
+				"public/design/css/custom.css"
+			],
+			[
+				"head",
+				"resources/views/layouts/header.blade.php"
+			],
+			[
+				"uplo",
+				"app/Http/Controllers/UploadController.php"
+			],
+			[
+				"hom",
+				"resources/views/layouts/home_header.blade.php"
+			],
+			[
+				"",
+				"resources/views/layouts/objects_report/header.blade.php"
+			],
+			[
+				"web.",
+				"routes/web.php"
+			],
+			[
+				"out",
+				"vendor/symfony/console/Output/Output.php"
+			],
+			[
+				"form",
+				"vendor/silverstripe/framework/src/Forms/Form.php"
+			],
+			[
+				"_confi",
+				"app/_config.php"
+			],
+			[
+				"app",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"app.bla",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"pro_report_menu",
+				"resources/views/layouts/pro_report_menu.blade.php"
+			],
+			[
+				"report_menu",
+				"resources/views/layouts/report_menu.blade.php"
+			],
+			[
+				"app.bl",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"app.blade",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"header",
+				"resources/views/layouts/header.blade.php"
+			],
+			[
+				"repo",
+				"app/Http/Controllers/ReportController.php"
+			],
+			[
+				"profile.b",
+				"resources/views/profile.blade.php"
+			],
+			[
+				"registe",
+				"resources/views/register.blade.php"
+			],
+			[
+				"resetpas",
+				"app/Http/Controllers/Auth/ResetPasswordController.php"
+			],
+			[
+				"stat",
+				"app/Http/Controllers/StaticController.php"
+			],
+			[
+				"forgotp",
+				"app/Http/Controllers/Auth/ForgotPasswordController.php"
+			],
+			[
+				"app.blad",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"eng_u",
+				"resources/views/layouts/eng_upload_variables.php"
+			],
+			[
+				"_upload",
+				"resources/views/layouts/deu_upload_variables.php"
+			],
+			[
+				"custo",
+				"public/design/css/custom.css"
+			],
+			[
+				"web.p",
+				"routes/web.php"
+			],
+			[
+				"searc",
+				"resources/views/search/search-bar.blade.php"
+			],
+			[
+				"open-c",
+				"resources/views/opencr-layout.blade.php"
+			],
+			[
+				"theme",
+				"public/design/css/light/theme.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"32":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"35":
+				{
+					"group": 0,
+					"index": 9
+				},
+				"42":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"43":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"44":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"46":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"47":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"48":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"49":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"69":
+				{
+					"group": 0,
+					"index": 8
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 287.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
