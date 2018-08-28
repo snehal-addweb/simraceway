@@ -22,22 +22,27 @@ Change it, enhance it and most importantly enjoy it!
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<% require themedCSS('reset') %>
-	<% require themedCSS('typography') %>
-	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
-	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
+	<% require themedCSS('bootstrap') %>
+	<% require themedCSS('bootstrap-theme') %>
+	<% require themedCSS('owl.carousel.min') %>
+	<% require themedCSS('owl.theme.default.min') %>
+	<% require themedCSS('main') %>
+	<link rel="shortcut icon" href="themes/simrace/images/favicon.ico" />
+	
 </head>
 <body class="$ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>
 <div class="main" role="main">
-	<div class="inner typography line">
+	<div class="main-container">
 		$Layout
 	</div>
 </div>
 <% include Footer %>
 
 <% require javascript('//code.jquery.com/jquery-3.3.1.min.js') %>
+<% require themedJavascript('bootstrap') %>
+<% require themedJavascript('bootstrap.min') %>
+<% require themedJavascript('owl.carousel.js') %>
 <% require themedJavascript('script') %>
 
 </body>

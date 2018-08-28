@@ -1,0 +1,94 @@
+
+body {
+	.slider-section {
+		width: 100%;
+		display: inline-block;
+		img {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  border: none;
+		}
+		.owl-stage-outer {
+			.owl-item active {
+				.owl-stage {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.section-our-client {
+		padding-bottom: 50px;
+		.client-item-wrap {
+			display: inline-block;
+			width: 100%;
+			background-color: #D6D6D6;
+			.item {
+				display: inline-block;
+				img {
+					border: none;
+				}
+			}
+		}
+	}
+
+	.client-item {
+		padding-bottom: 50px;
+		.card {
+			display: inline-block;
+			width: 100%;
+			.card-left {
+				width: calc(32% - 8px);
+		    margin-right: 15px;
+		    background-color: $grey;
+		    display: inline-block;
+		    float: left;
+		    .client-caption-title {
+		    	padding: 10px 0;
+		    	background-color: $black;
+		    	color: $white;
+		    	padding: 10px;
+		    }
+		    .client-caption {
+		    	padding: 10px;
+		    }
+		  	@media only screen and (max-width: 767px) {
+					width: 100%;
+					margin: 0 0 15px;
+				}
+			}
+		}
+	}
+
+	.racing-series-section {
+		width: 100%;
+		display: inline-block;
+		padding: 5px;
+		.item-event {
+			display: inline-block;
+	    padding: 20px;
+	    background-color: $white;
+	    -webkit-box-shadow: 3px 3px 10px 2px $grey;
+		     -moz-box-shadow: 3px 3px 10px 2px $grey;
+		          box-shadow: 3px 3px 10px 2px $grey; 
+		  .banner-caption {
+		  	color: #9ba0a0;
+		  	padding: 5px 0;
+		  }
+	  	.month,
+	  	.time,
+	  	.race-no{
+	  		font-size: 18px;
+	  		font-weight: 500;
+	  	}
+	  	.date {
+	  		font-size: 26px;
+	  		font-weight: bold;
+	  	}
+		}
+		.item-event_hover:hover {
+			background-color: $red;
+			cursor: pointer;
+		}
+	}
+}
