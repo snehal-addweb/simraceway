@@ -1,0 +1,18 @@
+.gallary-section {
+  padding-bottom: 50px;
+  .image-wrap {
+    display: inline-block;
+    width: 100%;
+    column-count: 3;
+    column-gap: 1em;
+    /*padding: 10PX;*/
+    img {
+      width: 100%;
+      margin: 0 0 6px;
+      border: none;
+    }
+    @media only screen and (max-width: 520px) {
+      column-count: 2;
+    }
+  }
+}
