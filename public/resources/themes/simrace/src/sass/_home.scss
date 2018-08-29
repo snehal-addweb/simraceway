@@ -1,0 +1,150 @@
+/* banner slider section */
+.slider-section {
+  .homeimage {
+    position: relative;
+    overflow: hidden;
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+    &::after {
+      position: absolute;
+      bottom: -54px;
+      left: -10px;
+      height: 115px;
+      background-color: $white;
+      content: '';
+      @include css3-sufix(width, calc(100% + 10px));
+      @include css3-prefix(transform, rotate(4deg));
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section-our-client {
+  padding-bottom: 50px;
+  .client-item-wrap {
+    display: inline-block;
+    width: 100%;
+    background-color: $grey-light;
+    .item {
+      display: inline-block;
+      img {
+        border: none;
+      }
+    }
+  }
+}
+
+.client-item {
+  padding-bottom: 50px;
+  .card-wrap {
+    display: inline-block;
+    width: 100%;
+    .card {
+      float: left;
+      display: inline-block;
+      width: calc(32% - 8px);
+      margin-right: 15px;
+      background-color: $grey-light;
+      text-align: center;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin: 0 0 15px;
+      }
+      &:hover {
+        margin-top: -10px;
+        background-color: $white;
+        color: $primary-color;
+        @include css3-prefix(box-shadow, 0 3px 10px 4px $grey-light);
+        .client-caption-title {
+          background-color: $primary-color;
+        }
+        .client-body {
+          padding-bottom: 30px;
+          background-color: $white;
+          .btn-plain {
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
+      }
+      .client-caption-title {
+        padding: 10px;
+        background-color: $base-color;
+        color: $white;
+      }
+      .client-body {
+        padding: 15px;
+        .price {
+          margin: 25px 0 30px;
+          color: $primary-color;
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .about {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+.racing-series-section {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  .item-event {
+    float: left;
+    display: inline-block;
+    width: calc(17% - 8px);
+    border-right: 1px solid $base-color;
+    text-align: center;
+    opacity: .3;
+    &:hover {
+      margin-top: -10px;
+      padding: 15px 0;
+      border-right: none;
+      background-color: $white;
+      color: $primary-color;
+      opacity: unset;
+      @include css3-prefix(box-shadow, 0 3px 10px 3px $grey-light);
+      .date {
+        color: $primary-color;
+      }
+      .time {
+        color: rgba($base-color, .5);
+      }
+      .upcomming-race {
+        display: block;
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .upcomming-race {
+      display: none;
+    }
+    .banner-caption {
+      padding: 5px 0;
+      color: $black;
+    }
+    .month,
+    .time,
+    .race-no {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .date {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}

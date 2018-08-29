@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 15px 32px;
+  border: 1px solid $primary-color;
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-plain {
+  border-color: $primary-color;
+  background-color: transparent;
+  color: $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+.btn-red {
+  @extend .btn;
+}
+.btn-white {
+  border-color: $white;
+  background-color: $white;
+  color: $primary-color;
+}
+
+
