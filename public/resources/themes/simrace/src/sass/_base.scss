@@ -1,28 +1,10 @@
-/*.btn {
-  float: right;
-  margin-left: 100px;
-  border: $sky-blue;
-  background-color: $base-color;
-  color: $white;
-  @media (max-width: 676px) {
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
+@font-face {
+  font-family: 'exo';
+  src: url('../webfonts/exo/Exo-Regular.otf');
 }
 
-.medical_care_para {
-  display: inline-block;
-  max-width: 95%;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-  font-size: 18px;
-  justify-content: center;
-  @media (max-width: 767px) {
-    padding-bottom: 20px;
-    padding-left: 0;
-    font-size: 14px;
-  }
+body {
+  color: $base-color;
+  font-size: 14px;
+  font-family: exo;
 }
-*/

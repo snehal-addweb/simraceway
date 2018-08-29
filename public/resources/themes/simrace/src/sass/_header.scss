@@ -1,3 +1,4 @@
+
 header {
   background-image: linear-gradient($header-red-upper, $header-red-lower);
   @media only screen and (max-width: 1060px) {
@@ -15,6 +16,10 @@ header {
         a {
           color: $white;
           font-weight: 500;
+          &:hover {
+            color: $white;
+            font-weight: 700;
+          }
         }
         .active {
           border-bottom: 2px solid $white;
@@ -51,11 +56,11 @@ header {
           background-color: $white;
           box-shadow: 0 0 5px $box-shadow-header;
           a {
-            color: $dark-red;
+            color: $primary-color;
             font-weight: bold;
           }
 
-          @media only screen and (max-width: 767px)  {
+          @media only screen and (max-width: 767px) {
             top: 0;
             padding: 0;
           }

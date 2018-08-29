@@ -1,7 +1,7 @@
 .footer {
   bottom: 0;
   width: 100%;
-  background-image: url('/footer-bg.png');
+  background-image: url('../images/footer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   .unit {
@@ -42,7 +42,7 @@
               color: $white;
             }
             a:hover {
-              color: $red-font;
+              color: $primary-color;
               text-decoration: none;
             }
           }
@@ -67,7 +67,7 @@
           color: $white;
         }
         a:hover {
-          color: $red-font;
+          color: $primary-color;
           text-decoration: none;
         }
         img {

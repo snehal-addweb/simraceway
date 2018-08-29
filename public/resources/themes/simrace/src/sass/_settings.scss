@@ -8,16 +8,19 @@
 
 $white: #FFF;
 $black: #000;
-$grey: #DCDCDB;
+$red: #F00;
+
+$base-color: #333;
+$primary-color: $red;
+
+$grey-light: lighten($base-color, 75%);
+
+
+/*$grey-dark: #272727;*/
 $box-shadow-header: #333;
 $toggle-header: #EDEDED;
-$header-red-upper: #F20C0F;
-$header-red-lower: #B2181B;
-$dark-red: #E80909;
-$red-font: #CA0014;
-$text-red: #FF0; /*card red text*/
-
-
+$header-red-upper: #F20C0F; /*header background (light)*/
+$header-red-lower: #B2181B; /*header background (dark)*/
 
 /* ---- Label Colors ---- */
 

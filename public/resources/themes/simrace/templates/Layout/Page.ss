@@ -26,7 +26,7 @@
 				        <div class="banner-caption">$EndDate</div>
 				        <div class="banner-caption race-no">$StartTime</div>
 				        <div class="banner-caption time">$EndTime</div>
-				        <div class="banner-caption">$Race</div>
+				        <div class="banner-caption btn">$Race</div>
 				      </div>
 				    <% end_loop %>
 			    </div>

@@ -20,6 +20,7 @@
 				<div class="container">
 					<% loop $AddEvent %>
 				      <div class="item-event">
+				       <div class="banner-caption upcomming-race">UPCOMMING</div>
 				        <div class="banner-caption">$Photo</div>
 				        <div class="banner-caption month">$EventName</div>
 				        <div class="banner-caption date">$StartDate</div>
@@ -54,13 +55,14 @@
 		    	<div class="client-item">
 		    		<div class="container">
 			    		<h1>Learn How to get Involved</h1>
-			    		<div class="card">
+			    		<div class="card-wrap">
 						    <% loop $AddNewGetInvolved %>
-			    				<div class="card-left">
+			    				<div class="card">
 							        <div class="client-caption-title">$Titles</div>
-							        <div class="client-caption-wrap">
+							        <div class="client-body">
 								        <div class="price">$Price</div>
 								        <div class="about">$About</div>
+								        <button class="btn btn-plain"> signup</button>
 								      </div>
 					    		</div>
 					    	<% end_loop %>
