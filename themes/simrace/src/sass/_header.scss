@@ -5,10 +5,7 @@
     li {
       a {
         color: $white;
-        font-weight: 500;
-        &:hover {
-          color: $text-red;
-        }
+        font-weight: bold;
       }
       .active {
         border-bottom: 2px solid $white;
@@ -46,7 +43,6 @@
               box-shadow: 0 0 5px $box-shadow-header;
               top: 0;
               a {
-                /*color: $dark-red;*/
                 font-weight: bold;
               }
               @media only screen and (max-width: 767px) {

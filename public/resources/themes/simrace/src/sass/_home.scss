@@ -29,15 +29,20 @@
     align-items: center;
     .owl-dot {
       span {
-        width: 50px;
+        display: block;
         height: 4px;
+        width: 50px;
         margin: 5px 7px;
         background: $white;
-        display: block;
-      } 
+        &:focus {
+          border: transparent;
+          background-color: blue;
+        }
+      }
       &.active {
         span {
           background-color: $primary-color;
+
         }
       }
     }
@@ -92,9 +97,18 @@
         }
       }
       .client-caption-title {
+        display: flex;
+        height: 90px;
         padding: 10px;
-        background-color: $base-color;
-        color: $white;
+        background: #000;
+        color: #FFF;
+        font-size: 24px;
+        font-style: oblique;
+        text-align: center;
+        vertical-align: middle;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
       .client-body {
         padding: 15px;
