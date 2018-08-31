@@ -35,21 +35,24 @@
 			<% end_if %>
 		<!-- Event Section End -->
 
+		<div class="bg-img">
 	    <!-- Clients Section Start -->
 		  <div class="section-our-client">
-		    <% if $Client %>
-		    	<h1>Our Clients</h1>
-		    	<div class="client-item-wrap">
-				    <% loop $Client %>
-				      <div class="item">
-				        $ClientPhoto
-				      </div>
-				    <% end_loop %>
-				  </div>
-			<% end_if %>
+		  	<div class="container">
+			    <% if $Client %>
+			    	<h1>Our Clients</h1>
+			    	<div class="client-item-wrap">
+					    <% loop $Client %>
+					      <div class="item">
+					        $ClientPhoto
+					      </div>
+					    <% end_loop %>
+					  </div>
+				<% end_if %>
+				</div>
 			</div>
 	    <!-- Clients Section End -->
-
+	   </div>
 	    <!-- Howtogetinvolved Section Start -->
 		    <% if $AddNewGetInvolved %>
 		    	<div class="client-item">
