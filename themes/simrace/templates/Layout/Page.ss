@@ -52,7 +52,7 @@
 				</div>
 			</div>
 	    <!-- Clients Section End -->
-	    
+
 	   </div>
 	    <!-- Howtogetinvolved Section Start -->
 		    <% if $AddNewGetInvolved %>
@@ -105,19 +105,16 @@
 		<!-- Gallary Section End -->
 
 		<!-- Video Section Start -->
-	    	
-	    	<% if $Gallary %>
-	    	<div class="container">
-	    		<div class="gallary-section">
-		    		<h1>Latest Video's</h1>
-	    			<div class="image-wrap">
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+		    	<div class="container">
+		    		<div class="gallary-section">
+			    		<h1>Latest Video's</h1>
+		    			<div class="image-wrap">
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+						</div>
+						<button class="btn btn-plain">VIEW ALL MEDIA</button>
 					</div>
-					<button class="btn btn-plain">VIEW ALL MEDIA</button>
 				</div>
-			</div>
-			<% end_if %>
 		<!-- Video Section End -->
 	</article>
 		$Form

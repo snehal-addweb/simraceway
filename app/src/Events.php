@@ -232,7 +232,6 @@ SQL;
             $fields->addFieldToTab('Root.About',new EmailField('Email','Email'));
             $fields->addFieldToTab('Root.About',new NumericField('Number','Call'));
             $fields->addFieldToTab('Root.About',new TextareaField ('Description','Description'));
-            
 
         });
 
