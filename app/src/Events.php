@@ -4,12 +4,15 @@ namespace Event\Component;
 use Page;
 use SilverStripe\Assets\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\File;
 use Colymba\BulkManager\BulkManager;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TimeField;
+use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\ButtonField;
+use SilverStripe\Forms\NumericField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
@@ -63,14 +66,24 @@ class Events extends Page
     ];
     private static $many_many = [
         'HomePhoto' => Image::class,
-        'Gallary' => Image::class,
+        'Gallary' => Image::class
     ];
-    
+    private static $has_one = [
+        'About' => Image::class,
+    ];
     //...
     private static $owns = [
         'HomePhoto',
-        'Gallary'
+        'Gallary',
+        'About'
     ];
+
+    private static $db = [
+      "Email" => "Varchar(255)",
+      "Number" => "Varchar(255)",
+      "Description" => "Text"
+    ];
+
     private static $table_name = 'EventGallarypage';
 
     public function getCMSFields()
@@ -209,12 +222,17 @@ SQL;
                 Client::get(),
                 $configc
             );
-
+            
             $fields->addFieldToTab('Root.Client', $clientsubmissions);
             $fields->addFieldToTab('Root.Events', $submissions);
             $fields->removeFieldFromTab('Root.Main',"Content");
             $fields->addFieldToTab('Root.Gallary', UploadField::create('Gallary'));
             $fields->addFieldToTab('Root.Main', UploadField::create('HomePhoto'));
+            $fields->addFieldToTab('Root.About', UploadField::create('About'));
+            $fields->addFieldToTab('Root.About',new EmailField('Email','Email'));
+            $fields->addFieldToTab('Root.About',new NumericField('Number','Call'));
+            $fields->addFieldToTab('Root.About',new TextareaField ('Description','Description'));
+            
 
         });
 

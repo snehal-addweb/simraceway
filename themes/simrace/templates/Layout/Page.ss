@@ -50,6 +50,7 @@
 			</div>
 	    <!-- Clients Section End -->
 
+
 	    <!-- Howtogetinvolved Section Start -->
 		    <% if $AddNewGetInvolved %>
 		    	<div class="client-item">
@@ -62,7 +63,7 @@
 							        <div class="client-body">
 								        <div class="price">$Price</div>
 								        <div class="about">$About</div>
-								        <button class="btn btn-plain"> signup</button>
+								        <button class="btn btn-plain">signup</button>
 								      </div>
 					    		</div>
 					    	<% end_loop %>
@@ -71,6 +72,19 @@
 		      </div>
 			<% end_if %>
 	    <!-- Howtogetinvolved Section End -->
+
+	    <!-- About Section Start -->
+			<div class="">
+		    	<% if $About %>
+			    	<h1>About the car</h1>
+			    	$About
+			    	$Email
+			    	$Number
+			    	$Description
+				<% end_if %>
+			</div>
+	    <!-- About Section End -->
+
 	    <!-- Gallary Section Start -->
 	    	
 	    	<% if $Gallary %>
@@ -86,6 +100,22 @@
 			</div>
 			<% end_if %>
 		<!-- Gallary Section End -->
+
+		<!-- Video Section Start -->
+	    	
+	    	<% if $Gallary %>
+	    	<div class="container">
+	    		<div class="gallary-section">
+		    		<h1>Latest Video's</h1>
+	    			<div class="image-wrap">
+					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+					</div>
+					<button class="btn btn-plain">VIEW ALL MEDIA</button>
+				</div>
+			</div>
+			<% end_if %>
+		<!-- Video Section End -->
 	</article>
 		$Form
 		$CommentsForm
