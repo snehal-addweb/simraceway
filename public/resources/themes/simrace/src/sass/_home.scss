@@ -169,7 +169,7 @@
         background: inherit;
         background-color: $white;
         content: '';
-        transform: skewY(6.5deg);
+        @include prefix(transform, skewY(6.5deg), 'webkit' 'ms');
       }
       .about-desc-tab {
         display: inline-block;
@@ -198,7 +198,7 @@
 /* Our Client section */
 .bg-img {
   padding: 50px 0;
-  background-image: url('../images/png.png');
+  background-image: url('../images/bg-png.png');
   background-position: left -65px top;
   background-repeat: no-repeat;
   background-size: 546px 415px;
