@@ -35,6 +35,51 @@
 			<% end_if %>
 		<!-- Event Section End -->
 
+
+
+	    <!-- About Section Start -->
+			<div class="about-car">
+				<div class="container">
+		    	<% if $About %>
+			    	<div class="row about-wrap">
+				    	<div class="col-md-6">
+				    		<div class=" about-image">
+				    			$About
+				    		</div>
+				    	</div>
+				    	<div class="col-md-6 img-desc">
+				    		<div class=" about-desc-tab">
+				    			<p class="about-car-heading">About the car</p>
+						    	<p class="desc-about"> $Description </p> 
+						    	<div class="email-num">
+						    		$Email
+						    		$Number
+						    	</div>
+						    </div>
+					    </div>
+					  </div>
+					<% end_if %>
+				</div>
+			</div>
+	    <!-- About Section End -->
+
+
+	    <!-- Gallary Section Start -->
+	    	
+	    	<% if $Gallary %>
+	    	<div class="container">
+	    		<div class="gallary-section">
+		    		<h1>F3 Series Highlight Gallary</h1>
+	    			<div class="image-wrap">
+					   	<% loop $Gallary %>
+						  $ScaleWidth(300)
+						<% end_loop %>
+					</div>
+				</div>
+			</div>
+			<% end_if %>
+			<!-- Gallary Section End -->
+
 		<div class="bg-img">
 	    <!-- Clients Section Start -->
 		  <div class="section-our-client">
@@ -56,7 +101,7 @@
 	   </div>
 	    <!-- Howtogetinvolved Section Start -->
 		    <% if $AddNewGetInvolved %>
-		    	<div class="client-item">
+		    	<div class="get-involved">
 		    		<div class="container">
 			    		<h1>Learn How to get Involved</h1>
 			    		<div class="card-wrap">
@@ -76,37 +121,10 @@
 			<% end_if %>
 	    <!-- Howtogetinvolved Section End -->
 
-	    <!-- About Section Start -->
-			<div class="">
-		    	<% if $About %>
-			    	<h1>About the car</h1>
-			    	$About
-			    	$Email
-			    	$Number
-			    	$Description
-				<% end_if %>
-			</div>
-	    <!-- About Section End -->
-
-	    <!-- Gallary Section Start -->
-	    	
-	    	<% if $Gallary %>
-	    	<div class="container">
-	    		<div class="gallary-section">
-		    		<h1>F3 Series Highlight Gallary</h1>
-	    			<div class="image-wrap">
-					   	<% loop $Gallary %>
-						  $ScaleWidth(300)
-						<% end_loop %>
-					</div>
-				</div>
-			</div>
-			<% end_if %>
-		<!-- Gallary Section End -->
 
 		<!-- Video Section Start -->
-		    	<div class="container">
-		    		<div class="gallary-section">
+		    	<div class="latest-video">
+		    		<div class="container">
 			    		<h1>Latest Video's</h1>
 		    			<div class="image-wrap">
 						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
