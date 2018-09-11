@@ -27,6 +27,23 @@
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 992px) {
+      bottom: 250px;
+    }
+    @media only screen and (max-width: 767px) {
+      bottom: 190px;
+    }
+    @media only screen and (max-width: 580px) {
+      bottom: 150px;
+    }
+    @media only screen and (max-width: 420px) {
+      bottom: 100px;
+    }
+    button {
+      &:focus {
+        outline: none;
+      }
+    }
     .owl-dot {
       span {
         display: block;
@@ -34,30 +51,70 @@
         width: 50px;
         margin: 5px 7px;
         background: $white;
-        &:focus {
-          border: transparent;
-          background-color: blue;
+        @media only screen and (max-width: 420px) {
+          height: 2px;
+          width: 30px;
+          margin: 5px 3px;
         }
       }
       &.active {
         span {
           background-color: $primary-color;
-
         }
       }
     }
   }
 }
-.section-our-client {
-  padding-bottom: 50px;
-  .client-item-wrap {
-    display: inline-block;
-    width: 100%;
+
+.bg-img {
+  padding: 50px 0;
+  background-image: url('../images/png.png');
+  background-position: left -65px top;
+  background-repeat: no-repeat;
+  background-size: 546px 415px;
+  @media only screen and (max-width: 420px) {
+    background-image: unset;
+  }
+  .section-our-client {
+    margin: 50px 0 40px;
+    padding: 10px 0 50px;
     background-color: $grey-light;
-    .item {
+    .client-item-wrap {
       display: inline-block;
-      img {
-        border: none;
+      width: 100%;
+      .item {
+        display: inline-block;
+        max-width: 140px;
+        width: calc(100% - 25px);
+        margin-right: 50px;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media only screen and (max-width: 992px) {
+          width: calc(13% - 25px);
+          margin-right: 40px;
+          margin-bottom: 20px;
+          background-color: red;
+        }
+        @media only screen and (max-width: 580px) {
+          &:nth-child(2n) {
+            margin-right: 0;
+            }
+        }
+        @media only screen and (max-width: 420px) {
+          margin: 0 0 20px;
+        }
+        img {
+          max-width: 140px;
+          border: none;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+        .item {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -77,9 +134,10 @@
       text-align: center;
       @media only screen and (max-width: 767px) {
         width: 100%;
-        margin: 0 0 15px;
+        margin: 0 0 20px;
       }
-      &:hover {
+      &:hover,
+        focus {
         margin-top: -10px;
         background-color: $white;
         color: $primary-color;
@@ -130,6 +188,7 @@
   display: inline-block;
   width: 100%;
   padding: 5px;
+  padding-bottom: 50px;
   .item-event {
     float: left;
     display: inline-block;
@@ -137,7 +196,19 @@
     border-right: 1px solid $base-color;
     text-align: center;
     opacity: .3;
-    &:hover {
+    @media only screen and (max-width: 992px) {
+      width: calc(33% - 8px);
+    }
+    @media only screen and (max-width: 580px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 420px) {
+      width: 100%;
+      margin-bottom: 20px;
+      border-right: none;
+    }
+    &:hover,
+      focus {
       margin-top: -10px;
       padding: 15px 0;
       border-right: none;
@@ -164,6 +235,9 @@
     .banner-caption {
       padding: 5px 0;
       color: $black;
+      img {
+        max-width: 150px;
+      }
     }
     .month,
     .time,

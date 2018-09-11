@@ -2,6 +2,12 @@
   font-family: 'exo';
   src: url('../webfonts/exo/Exo-Regular.otf');
 }
+*,
+a {
+  &:focus {
+    outline: none;
+  }
+}
 
 body {
   color: $base-color;

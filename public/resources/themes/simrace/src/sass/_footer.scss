@@ -7,6 +7,9 @@
   .unit {
     .contect-footer {
       padding-top: 150px;
+      @media only screen and (max-width: 420px) {
+        padding-top: 300px;
+      }
       .logo {
         @media only screen and (max-width: 767px) {
           width: 100%;
@@ -41,7 +44,8 @@
             a {
               color: $white;
             }
-            a:hover {
+            a:hover,
+              focus {
               color: $primary-color;
               text-decoration: none;
             }
@@ -66,7 +70,8 @@
         a {
           color: $white;
         }
-        a:hover {
+        a:hover,
+          focus {
           color: $primary-color;
           text-decoration: none;
         }
