@@ -47,13 +47,13 @@
 				    			$About
 				    		</div>
 				    	</div>
-				    	<div class="col-md-6 img-desc">
+				    	<div class="col-md-6 img-desc left-right-slant">
 				    		<div class=" about-desc-tab">
 				    			<p class="about-car-heading">About the car</p>
 						    	<p class="desc-about"> $Description </p> 
 						    	<div class="email-num">
-						    		$Email
 						    		$Number
+						    		$Email
 						    	</div>
 						    </div>
 					    </div>
@@ -128,6 +128,7 @@
 			    		<h1>Latest Video's</h1>
 		    			<div class="image-wrap">
 						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
 						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
 						</div>
 						<button class="btn btn-plain">VIEW ALL MEDIA</button>
