@@ -7,7 +7,14 @@
 						<div class="logo">
 							<a href="$BaseHref" class="brand" rel="home">$SiteConfig.Title</a>
 							<a href="$BaseHref" class="brand" rel="home">$SiteConfig.Tagline</a>
+							
 						</div>
+						<label>$SiteConfig.About</label><br/>
+						<div class="other"><a href="#">Terms & Conditions</a></div>
+						<div class="other"><a href="#">Privacy Policy</a></div>
+						<div class="other"><a href="#">Cancellation Policy</a></div>
+						<label>$SiteConfig.CopyRight</label><br/>
+
 					</div>
 					<div class="col-md-2">
 						<div  class="quick-link">
@@ -20,13 +27,14 @@
 						</div>
 					</div>
 					<div class="col-md-2">
-						<div class="contact">
+						<div class="address">
 							<h3>CONTACT US</h3>
-							<label>$SiteConfig.CopyRight</label><br/>
 							<label>$SiteConfig.Address</label><br/>
-							<label>$SiteConfig.PhoneNumber1</label><br/>
-							<label>$SiteConfig.About</label><br/>
-							<label>$SiteConfig.Email</label><br/>
+						</div>
+						<div class="contact">
+							<label>PDC Phone - $SiteConfig.PhoneNumber1</label><br/>
+							<label>Karting Phone - $SiteConfig.PhoneNumber2</label><br/>
+							<label>Email - $SiteConfig.Email</label><br/>
 						</div>
 					</div>
 					<div class="col-md-2">

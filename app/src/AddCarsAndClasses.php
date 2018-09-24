@@ -78,12 +78,12 @@ class AddCarsAndClasses extends Page
 
         $this->beforeUpdateCMSFields(function ($fields) {
             $fields->removeFieldFromTab('Root.Main',"Content");
-            $fields->addFieldToTab('Root.Main',new TextField('Name','Title'));
-            $fields->addFieldToTab('Root.Main',new TextareaField('Description','Description'));
-            $fields->addFieldToTab('Root.Main',new TextField('Stastics','Stastics'));
-            $fields->addFieldToTab('Root.Main',new TextField('Power','Power'));
-            $fields->addFieldToTab('Root.Main',new TextField('Weight','Weight'));
-            $fields->addFieldToTab('Root.Main',new UploadField('Photo'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new TextField('Name','Title'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new TextareaField('Description','Description'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new TextField('Stastics','Statistics'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new TextField('Power','Power'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new TextField('Weight','Weight'));
+            $fields->addFieldToTab('Root.AddCarsAndClasses',new UploadField('Photo'));
 
         });
 

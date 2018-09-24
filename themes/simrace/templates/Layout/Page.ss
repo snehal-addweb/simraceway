@@ -62,7 +62,28 @@
 			</div>
 	    <!-- About Section End -->
 
-
+	    <!-- Howtogetinvolved Section Start -->
+		    <% if $AddNewGetInvolved %>
+		    	<div class="get-involved">
+		    		<div class="container">
+			    		<h1>Learn How to get Involved</h1>
+			    		<div class="card-wrap">
+						    <% loop $AddNewGetInvolved %>
+			    				<div class="card">
+							        <div class="client-caption-title">$Titles</div>
+							        <div class="client-body">
+								        <div class="price">$Price</div>
+								        <div class="about">$About</div>
+								        <button class="btn btn-plain">signup</button>
+								      </div>
+					    		</div>
+					    	<% end_loop %>
+				    	</div>
+				    </div>
+		      	</div>
+			<% end_if %>
+	    <!-- Howtogetinvolved Section End -->
+	    
 	    <!-- Gallary Section Start -->
 	    	
 	    	<% if $Gallary %>
@@ -71,7 +92,7 @@
 		    		<h1>F3 Series Highlight Gallary</h1>
 	    			<div class="image-wrap">
 					   	<% loop $Gallary %>
-						  $ScaleWidth(300)
+						  $ScaleWidth(800)
 						<% end_loop %>
 					</div>
 				</div>
@@ -98,40 +119,43 @@
 	    <!-- Clients Section End -->
 
 	   </div>
-	    <!-- Howtogetinvolved Section Start -->
-		    <% if $AddNewGetInvolved %>
-		    	<div class="get-involved">
-		    		<div class="container">
-			    		<h1>Learn How to get Involved</h1>
-			    		<div class="card-wrap">
-						    <% loop $AddNewGetInvolved %>
-			    				<div class="card">
-							        <div class="client-caption-title">$Titles</div>
-							        <div class="client-body">
-								        <div class="price">$Price</div>
-								        <div class="about">$About</div>
-								        <button class="btn btn-plain">signup</button>
-								      </div>
-					    		</div>
-					    	<% end_loop %>
-				    	</div>
-				    </div>
-		      </div>
+	    
+
+	    <!-- start Cars and classes page  -->	
+	    	<% if $AddCarsAndClasses %>
+    			<div class="cars-classes">
+    				<div class="container">
+			    		<% loop $AddCarsAndClasses %>
+				    		<h1>$Name</h1>
+				    		<div class="card-wrap-cars">
+						        <div class="cars-desc">$Description</div>
+						        Statistics: <div class="statistics">$Stastics</div>
+						        Power: <div class="power">$Power</div>
+						        Weight: <div class="weight">$Weight</div>
+						        <div class="read-more"><a>Read More</a></div>
+						        <div class="image-wrap">
+								   	<% loop $Photos %>
+									  $ScaleWidth(800)
+									<% end_loop %>
+								</div>
+							</div>
+						<% end_loop %>
+					</div>
+				</div>
 			<% end_if %>
-	    <!-- Howtogetinvolved Section End -->
 
+					    
 
+	    <!-- End  Cars and classes page -->
 		<!-- Video Section Start -->
 		    	<div class="latest-video">
-		    		<div class="container">
-			    		<h1>Latest Video's</h1>
-		    			<div class="image-wrap">
-						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
-						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-						</div>
-						<button class="btn btn-plain">VIEW ALL MEDIA</button>
+		    		<h1>Latest Video's</h1>
+	    			<div class="image-wrap">
+					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
 					</div>
+					<button class="btn btn-plain">VIEW ALL MEDIA</button>
 				</div>
 		<!-- Video Section End -->
 	</article>

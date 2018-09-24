@@ -57,7 +57,7 @@ class CarsAndClasses extends Page
     private static $allowed_children = [
         AddCarsAndClasses::class,
     ];
-    private static $has_one = [
+    private static $has_many = [
         'AddCarsAndClasses' => AddCarsAndClasses::class,
     ];
     //...
