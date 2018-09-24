@@ -10,6 +10,7 @@ use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TimeField;
 use SilverStripe\Forms\ButtonField;
+use SilverStripe\Forms\DatetimeField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
@@ -53,11 +54,9 @@ class AddEvent extends Page
 {
     private static $db = [
       "EventName" => "Varchar(255)",
-      "StartDate" => "Date",
-      "EndDate" => "Date",
-      "Race" => "Text",
-      "StartTime" => "Varchar(255)",
-      "EndTime" => "Varchar(255)"
+      "StartDate" => "Datetime",
+      "EndDate" => "Datetime",
+      "Race" => "Text"
     ];
 
     private static $can_be_root = false;
@@ -79,13 +78,12 @@ class AddEvent extends Page
         $this->beforeUpdateCMSFields(function ($fields) {
 
             $fields->addFieldToTab('Root.AddEvent',new TextField('EventName','Event Name'));
-            $fields->addFieldToTab('Root.AddEvent',new DateField('StartDate','Start Date'));
-            $fields->addFieldToTab('Root.AddEvent',new DateField('EndDate','End Date'));
+            $fields->addFieldToTab('Root.AddEvent',new DatetimeField('StartDate','Start Date'));
+            $fields->addFieldToTab('Root.AddEvent',new DatetimeField('EndDate','End Date'));
             $fields->addFieldToTab('Root.AddEvent',new TextareaField('Race','Race'));
-            $fields->addFieldToTab('Root.AddEvent',new TimeField('StartTime','Time'));
+/*            $fields->addFieldToTab('Root.AddEvent',$start = new TimeField('StartTime','Time'));
             $fields->addFieldToTab('Root.AddEvent',new TimeField('EndTime','Time'));
-
-            $fields->addFieldToTab('Root.AddEvent',new UploadField('Photo'));
+*/            $fields->addFieldToTab('Root.AddEvent',new UploadField('Photo'));
 
         });
 

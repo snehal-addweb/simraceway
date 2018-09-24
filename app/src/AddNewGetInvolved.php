@@ -71,7 +71,7 @@ class AddNewGetInvolved extends Page
 
 
         $fields->addFieldToTab('Root.AddData',new TextField('Titles','Title'));
-        $fields->addFieldToTab('Root.AddData',new NumericField('Price','Price'));
+        $fields->addFieldToTab('Root.AddData',new TextField('Price','Price'));
         $fields->addFieldToTab('Root.AddData',new TextareaField ('About','About'));
 
 

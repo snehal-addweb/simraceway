@@ -57,12 +57,14 @@ class Events extends Page
     private static $has_many = [
         'AddEvent' => AddEvent::class,
         'Client' => Client::class,
-        'AddNewGetInvolved' => AddNewGetInvolved::class
+        'AddNewGetInvolved' => AddNewGetInvolved::class,
+        'Series' => Series::class
     ];
     private static $allowed_children = [
         AddEvent::class,
         Client::class,
-        AddNewGetInvolved::class
+        AddNewGetInvolved::class,
+        Series::class
     ];
     private static $many_many = [
         'HomePhoto' => Image::class,
@@ -126,9 +128,7 @@ SQL;
                 'EventName' => 'Event Name',
                 'StartDate' => 'Start Date',
                 'EndDate' => 'End Date',
-                'Race' => 'Race',
-                'StartTime' => 'Start Time',
-                'EndTime' => 'End Time'
+                'Race' => 'Race'
             );
 
             foreach (EditableFormField::get()->filter(array('ParentID' => $parentID)) as $eff) {
@@ -230,7 +230,7 @@ SQL;
             $fields->addFieldToTab('Root.Main', UploadField::create('HomePhoto'));
             $fields->addFieldToTab('Root.About', UploadField::create('About'));
             $fields->addFieldToTab('Root.About',new EmailField('Email','Email'));
-            $fields->addFieldToTab('Root.About',new NumericField('Number','Call'));
+            $fields->addFieldToTab('Root.About',new TextField('Number','Call'));
             $fields->addFieldToTab('Root.About',new TextareaField ('Description','Description'));
 
         });
