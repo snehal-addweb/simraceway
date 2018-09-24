@@ -1,13 +1,12 @@
 <% include SideBar %>
 <div class="content-container unit size3of4 lastUnit">
 	<article>
-		<h1>$Title</h1>
 		<!-- Home Image Start -->
 		<div class="slider-section owl-carousel owl-theme">
 			<% if $HomePhoto %>
 				<% loop $HomePhoto %>
 				<div class="homeimage">
-				  $ScaleWidth(200)
+				  $ScaleWidth(800)
 				</div>
 				<% end_loop %>
 			<% end_if %>
@@ -17,17 +16,17 @@
 		<!-- Event Section Start -->
 			<% if $AddEvent %>
 			<div class="racing-series-section">
+				<h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
 				<div class="container">
 					<% loop $AddEvent %>
-				      <div class="item-event">
-				       <div class="banner-caption upcomming-race">UPCOMMING</div>
-				        <div class="banner-caption">$Photo</div>
-				        <div class="banner-caption month">$EventName</div>
-				        <div class="banner-caption date">$StartDate</div>
-				        <div class="banner-caption">$EndDate</div>
-				        <div class="banner-caption race-no">$StartTime</div>
-				        <div class="banner-caption time">$EndTime</div>
-				        <div class="banner-caption">$Race</div>
+				    	<div class="item-event">
+				    		<div class="banner-caption upcomming-race">UPCOMMING</div>
+				       		<div class="banner-caption month">$StartDate.Format('MMMM')</div>
+				       		<div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
+				        	<div class="banner-caption">$Photo</div>
+					        <div class="banner-captionrace-no">Race $Race</div>
+					        <?php echo"DFF"; ?>
+					        <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartDate.Format('HH:mm') - $EndDate.Format('HH:mm')</div>
 				      </div>
 				    <% end_loop %>
 			    </div>
