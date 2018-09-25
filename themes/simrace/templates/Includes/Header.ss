@@ -34,7 +34,7 @@
 		      <!-- <a class="navbar-brand" href="#">Brand</a> -->
 			    <a href="$BaseHref" class="navbar-brand" rel="home">
 		        	<div class="header-left">
-		        	<img src="/logo-header.png">
+		        	<img src="/logo.png">
 					  <!-- <% if $SiteConfig.Tagline %>
 					  <p>$SiteConfig.Tagline</p>
 					  <% end_if %>

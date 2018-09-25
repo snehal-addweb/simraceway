@@ -11,6 +11,9 @@
 				<% end_loop %>
 			<% end_if %>
 		</div>
+		<!-- <div class="squares">
+			<img src="/squares.png">
+		</div> -->
 		<!-- Home Section End -->
 
 		<!-- Event Section Start -->
@@ -37,22 +40,22 @@
 
 
 	    <!-- About Section Start -->
-			<div class="about-car">
+			<div class="about-car bg-img">
 				<div class="container">
 		    	<% if $About %>
 			    	<div class="row about-wrap">
-				    	<div class="col-md-6">
-				    		<div class=" about-image">
+				    	<div class="col-md-6 img-overlap">
+				    		<div class=" about-image left-right-image">
 				    			$About
 				    		</div>
 				    	</div>
-				    	<div class="col-md-6 img-desc left-right-slant">
+				    	<div class="col-md-6 img-overlap img-desc right-left-slant">
 				    		<div class=" about-desc-tab">
 				    			<p class="about-car-heading">About the car</p>
 						    	<p class="desc-about"> $Description </p> 
 						    	<div class="email-num">
-						    		$Number
 						    		$Email
+						    		$Number
 						    	</div>
 						    </div>
 					    </div>
@@ -143,9 +146,6 @@
 					</div>
 				</div>
 			<% end_if %>
-
-					    
-
 	    <!-- End  Cars and classes page -->
 		<!-- Video Section Start -->
 		    	<div class="latest-video">

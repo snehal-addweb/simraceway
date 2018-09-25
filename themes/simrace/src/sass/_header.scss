@@ -36,12 +36,12 @@
                 content: '';
               }
             }
-            &:last-child {
-              background-color: $white;
-              margin: 0 5px;
+            &:nth-last-child(n) {
+              /*background-color: $white;*/
+              /*margin: 0 5px;
               padding: 25px 0;
               box-shadow: 0 0 5px $box-shadow-header;
-              top: 0;
+              top: 0;*/
               a {
                 /*font-weight: bold;*/
               }

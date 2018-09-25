@@ -1,0 +1,75 @@
+
+body {
+  .slider-section {
+    display: inline-block;
+    width: 100%;
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+      border: none;
+    }
+    .owl-stage-outer {
+      .owl-item active {
+        .owl-stage {
+          width: 100%;
+        }
+      }
+    }
+   /* .homeimage {
+      background-image: url('../images/squares.png');
+      background-repeat: no-repeat;
+      z-index: 9;
+    }*/
+  }
+  .section-our-client {
+    padding-bottom: 50px;
+    .client-item-wrap {
+      display: inline-block;
+      width: 100%;
+      background-color: $grey-light;
+      .item {
+        display: inline-block;
+        @media only screen and (max-width: 580px) {
+          display: inline-block;
+          width: 100%;
+        }
+        img {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .racing-series-section {
+    display: inline-block;
+    width: 100%;
+    padding: 70px 0;
+    .item-event {
+      display: inline-block;
+      padding: 20px 0;
+      background-color: $white;
+      -moz-box-shadow: 3px 3px 10px 2px$grey-light;
+      -webkit-box-shadow: 3px 3px 10px 2px $grey-light;
+      box-shadow: 3px 3px 10px 2px $grey-light;
+      .banner-caption {
+        padding: 5px 0;
+        color: #9BA0A0;
+      }
+      .month,
+      .time,
+      .race-no {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .date {
+        font-size: 26px;
+        font-weight: 900;
+      }
+    }
+    .item-event_hover:hover {
+      background-color: $red;
+      cursor: pointer;
+    }
+  }
+}
