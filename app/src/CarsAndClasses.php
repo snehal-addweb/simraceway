@@ -57,18 +57,24 @@ class CarsAndClasses extends Page
     private static $allowed_children = [
         AddCarsAndClasses::class,
     ];
+
+    private static $has_one = [
+        'Photo' => Image::class,
+    ];
     private static $has_many = [
         'AddCarsAndClasses' => AddCarsAndClasses::class,
     ];
     //...
     private static $owns = [
-        'Photo',
+        'Photo'
     ];
 
     public function getCMSFields()
     {
         Requirements::css('silverstripe/userforms:client/dist/styles/userforms-cms.css');
         $fields = parent::getCMSFields();
+        $fields->removeFieldFromTab('Root.Main',"Content");
+        $fields->addFieldToTab('Root.Main', UploadField::create('Photo'));
         return $fields;
     }
 }
