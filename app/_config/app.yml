@@ -1,0 +1,3 @@
+PurpleSpider\BasicCalendar\CalendarPage:
+  extensions:
+    - CustomSiteConfig
