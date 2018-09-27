@@ -23,10 +23,12 @@ Change it, enhance it and most importantly enjoy it!
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<% require themedCSS('bootstrap') %>
+	<% require themedCSS('bootstrap.min') %>
 	<% require themedCSS('bootstrap-theme') %>
 	<% require themedCSS('owl.carousel.min') %>
 	<% require themedCSS('owl.theme.default.min') %>
 	<% require themedCSS('main') %>
+	<% require themedCSS('fullcalendar.min') %>
 	<link rel="shortcut icon" href="themes/simrace/images/favicon.ico" />
 	
 </head>
@@ -41,7 +43,9 @@ Change it, enhance it and most importantly enjoy it!
 
 <% require javascript('//code.jquery.com/jquery-3.3.1.min.js') %>
 <% require themedJavascript('bootstrap') %>
-<% require themedJavascript('bootstrap.min') %>
+<% require themedJavascript('moment') %>
+<% require themedJavascript('fullcalendar.min') %>
+<% require themedJavascript('fullcalendars') %>
 <% require themedJavascript('owl.carousel.js') %>
 <% require themedJavascript('script') %>
 <% require themedJavascript('slider') %>
