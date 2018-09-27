@@ -3,7 +3,7 @@
   margin-left: -70px;
   padding-right: 0;
   padding-left: 0;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 992px) {
     margin-left: 0;
   }
   &::before {
@@ -12,7 +12,7 @@
     right: 0;
     left: 0;
     display: block;
-    height: 24%;
+    height: 20%;
     padding-bottom: -90px;
     background: inherit;
     background-color: $white;
@@ -22,7 +22,11 @@
       top: 52px;
       height: 17%;
     }
-    @media only screen and (max-width: 767px) {
+   /* @media only screen and (max-width: 992px) {
+      top: 61px;
+      height: 12%;
+    }*/
+    @media only screen and (max-width: 992px) {
       top: 0;
       height: 0;
     }
@@ -35,27 +39,26 @@
 .left-right-image {
   img {
     display: inline-block;
-    height: 500px;
+    height: 480px;
     width: 100%;
     margin-left: 50px;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 992px) {
       margin-bottom: 70px;
       margin-left: 0;
     }
   }
   &::before {
     position: absolute;
-    top: -50px;
+    top: -35px;
     right: -35px;
     left: 64px;
     display: block;
-    height: 20%;
-    padding-bottom: -90px;
+    height: 15%;
     background: inherit;
     background-color: $grey-light;
     content: '';
     @include prefix(transform, skewY(-6.5deg), 'webkit' 'ms');
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 992px) {
       right: 0;
       left: 15px;
       height: 0;
@@ -200,20 +203,23 @@
 
 /* About car section */
 .about-car {
-  padding: 170px 0 80px !important;
+  /*padding: 170px 0 80px !important;*/
   background-color: $grey-light;
+  @media only screen and (max-width: 1200px) {
+    /*padding: 0 !important;*/
+  }
   @media only screen and (max-width: 992px) {
-    padding-top: 100px !important;
+   /* padding-top: 50px !important;*/
   }
   @media only screen and (max-width: 767px) {
-    padding: 70px 0;
+    /*padding: 70px 0;*/
   }
   .about-wrap {
     float: right;
     display: flex;
     width: 100%;
     align-items: center;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 992px) {
       display: block;
     }
     .img-desc {
@@ -223,7 +229,8 @@
         padding: 30px 75px 70px;
         background-color: #FFF;
         @media only screen and (max-width: 992px) {
-          padding: 30px;
+          margin-top: 0;
+          padding: 50px;
         }
         .about-car-heading {
           color: $red;
@@ -242,12 +249,21 @@
     }
     .img-overlap {
       display: inline-block;
-      width: 100%;
     }
   }
   &.bg-img {
-    background-position: right 90px top 187px;
+    padding: 75px 0;
+    background-position: right 141px top 76px;
     background-size: 300px 250px;
+    @media only screen and (max-width: 1300px) {
+      background-position: right 24px top 76px;
+    }/*
+    @media only screen and (max-width: 1280px) {
+      background-position: right 24px top 76px;
+    }*/
+    @media only screen and (max-width: 1080px) {
+      background-size: 240px 206px;
+    }
   }
 }
 

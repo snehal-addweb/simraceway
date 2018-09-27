@@ -11,9 +11,7 @@
 				<% end_loop %>
 			<% end_if %>
 		</div>
-		<!-- <div class="squares">
-			<img src="/squares.png">
-		</div> -->
+
 		<!-- Home Section End -->
 
 		<!-- Event Section Start -->
@@ -40,9 +38,9 @@
 
 
 	    <!-- About Section Start -->
+	    <% if $About %>
 			<div class="about-car bg-img">
 				<div class="container">
-		    	<% if $About %>
 			    	<div class="row about-wrap">
 				    	<div class="col-md-6 img-overlap">
 				    		<div class=" about-image left-right-image">
@@ -60,9 +58,9 @@
 						    </div>
 					    </div>
 					  </div>
-					<% end_if %>
 				</div>
 			</div>
+			<% end_if %>
 	    <!-- About Section End -->
 
 	    <!-- Howtogetinvolved Section Start -->
@@ -103,11 +101,12 @@
 			<% end_if %>
 			<!-- Gallary Section End -->
 
+		<% if $Client %>
 		<div class="bg-img">
 	    <!-- Clients Section Start -->
 		  <div class="section-our-client">
 		  	<div class="container">
-			    <% if $Client %>
+			    
 			    	<h1>Our Clients</h1>
 			    	<div class="client-item-wrap">
 					    <% loop $Client %>
@@ -116,49 +115,79 @@
 					      </div>
 					    <% end_loop %>
 					  </div>
-				<% end_if %>
 				</div>
 			</div>
 	    <!-- Clients Section End -->
 
 	   </div>
-	    
-
-	    <!-- start Cars and classes page  -->	
+	  <% end_if %>
+<!-- End of Home page -->
+	<!-- Start of Cars and classes -->
+	  	
+	    <!-- start Cars and classes Data  -->	
 	    	<% if $AddCarsAndClasses %>
-    			<div class="cars-classes">
-    				<div class="container">
-			    		<% loop $AddCarsAndClasses %>
-				    		<h1>$Name</h1>
-				    		<div class="card-wrap-cars">
-						        <div class="cars-desc">$Description</div>
-						        Statistics: <div class="statistics">$Stastics</div>
-						        Power: <div class="power">$Power</div>
-						        Weight: <div class="weight">$Weight</div>
-						        <div class="read-more"><a>Read More</a></div>
-						        <div class="image-wrap">
-								   	<% loop $Photos %>
-									  $ScaleWidth(800)
-									<% end_loop %>
+	    		<div class="cars-classes">
+		    		<div class="slider-section owl-carousel owl-theme">
+								<% if $Photo %>
+									<div class="homeimage cars-banner">
+									  $Photo.$ScaleWidth(800)
+									</div>
+								<% end_if %>
+						</div>
+    				<div class="row f-row">
+				    	<% loop $AddCarsAndClasses %>
+				    		<div class="car-wrap">
+					    		<div class="container">
+					    			<div class="col-md-6 car-left">
+							    		<h1>$Name</h1>
+									      <div class="cars-desc">$Description</div>
+							    			<div class="card-wrap-cars">
+							    				<div class="cars-value-wrap">
+									        	<div class="classes-name"> Statistics: </div> 
+									        	<div class="classes-value">$Stastics</div>
+									        </div>
+									        <div class="cars-value-wrap">
+									        	<div class="classes-name">Power: </div> 
+									        	<div class="classes-value">$Power</div>
+									        </div>
+									        <div class="cars-value-wrap weight">
+										        <div class="classes-name"> Weight: </div>
+										        <div class="classes-value">$Weight</div>
+										      </div>
+										        <div class="read-more"><a>Read More</a></div>
+									    </div>
+									  </div>
+						        <div class="col-md-6 car-right">
+							        <div class="photo-wrap owl-carousel owl-theme">
+							        	<ul class="item-ul">
+											   	<% loop $Photo %>
+												  	<li class="item-li right-left-slant">$ScaleWidth(800)</li>
+													<% end_loop %>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
+							<% end_loop %>
+						</div>
+					</div>
+				<% else %>
+					<!-- Video Section Start -->
+			    	<div class="latest-video">
+			    		<h1>Latest Video's</h1>
+		    			<div class="image-wrap">
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+						   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
 							</div>
-						<% end_loop %>
-					</div>
-				</div>
-			<% end_if %>
-	    <!-- End  Cars and classes page -->
-		<!-- Video Section Start -->
-		    	<div class="latest-video">
-		    		<h1>Latest Video's</h1>
-	    			<div class="image-wrap">
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-					   	<iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-					</div>
-					<button class="btn btn-plain">VIEW ALL MEDIA</button>
-				</div>
-		<!-- Video Section End -->
+							<button class="btn btn-plain">VIEW ALL MEDIA</button>
+						</div>
+					<!-- Video Section End -->
+				<% end_if %>
+	    <!-- End  Cars and classes Data -->
+	  <!-- End cars and classes page -->
+		
 	</article>
 		$Form
 		$CommentsForm

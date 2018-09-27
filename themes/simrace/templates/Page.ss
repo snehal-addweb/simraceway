@@ -48,6 +48,7 @@ Change it, enhance it and most importantly enjoy it!
 <% require themedJavascript('bootstrap.min') %>
 <% require themedJavascript('owl.carousel.js') %>
 <% require themedJavascript('script') %>
+<% require themedJavascript('slider') %>
 
 </body>
 </html>
