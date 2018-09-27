@@ -10,14 +10,15 @@ use SilverStripe\AssetAdmin\Forms\UploadField;
 class CustomSiteConfig extends DataExtension 
 {
     private static $has_one = [
-        'About' => Image::class
+        'Photo' => Image::class
     ];
     private static $owns = [
-        'About'
+        'Photo'
     ];
     public function updateCMSFields(FieldList $fields) 
     {
-        $fields->addFieldToTab('Root.About', UploadField::create('About'));
+        $fields->removeFieldFromTab('Root.Main',"Content");
+        $fields->addFieldToTab('Root.Main', UploadField::create('Photo'));
     }
 
 }
