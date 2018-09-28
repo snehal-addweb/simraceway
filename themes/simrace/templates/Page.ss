@@ -28,7 +28,8 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS('owl.carousel.min') %>
 	<% require themedCSS('owl.theme.default.min') %>
 	<% require themedCSS('main') %>
-	<% require themedCSS('fullcalendar.min') %>
+	<% require themedCSS('fullcalendar') %>
+	
 	<link rel="shortcut icon" href="themes/simrace/images/favicon.ico" />
 	
 </head>
@@ -42,13 +43,41 @@ Change it, enhance it and most importantly enjoy it!
 <% include Footer %>
 
 <% require javascript('//code.jquery.com/jquery-3.3.1.min.js') %>
-<% require themedJavascript('bootstrap') %>
-<% require themedJavascript('moment') %>
-<% require themedJavascript('fullcalendar.min') %>
-<% require themedJavascript('fullcalendars') %>
 <% require themedJavascript('owl.carousel.js') %>
 <% require themedJavascript('script') %>
 <% require themedJavascript('slider') %>
+<% require themedJavascript('moment') %>
+<% require themedJavascript('jquery-ui.min') %>
+<% require themedJavascript('fullcalendar') %>
+<script type="text/javascript">
+	 jQuery.noConflict();
 
+		(function($) {
+
+		$(document).ready(function() {
+		    $('#bootstrapModalFullCalendar').fullCalendar({
+		    	header: {
+					left: '',
+					center: 'prev title next',
+					right: ''
+				},
+
+				events:
+				[
+					{
+						"allday":"true",
+						"title":"my new event smndnbsmnd",
+						"start":"2018-09-08",
+						"end":"2018-09-08",
+					}
+				]
+
+			});
+		});
+}(jQuery));
+    
+    
+</script>
 </body>
 </html>
+

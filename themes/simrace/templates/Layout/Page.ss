@@ -15,7 +15,7 @@
 		<!-- Home Section End -->
 
 		<!-- Event Section Start -->
-			<% if $AddEvent %>
+		<% if $AddEvent %>
 			<div class="racing-series-section">
 				<h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
 				<div class="container">
@@ -32,10 +32,16 @@
 				    <% end_loop %>
 			    </div>
 			</div>
-			<% end_if %>
+		<% end_if %>
 		<!-- Event Section End -->
 
-
+		<!-- Calendar Section Start -->
+		<% if $ClassName == 'Calendar\Component\Calendar' %>
+			<div class="container">
+				<div id="bootstrapModalFullCalendar" data-view='$FullCalendarView' data-source="$Link(eventsdata)"></div>
+			</div>
+		<% end_if %>
+		<!-- Calendar section End-->
 
 	    <!-- About Section Start -->
 	    <% if $About %>
@@ -60,9 +66,9 @@
 					  </div>
 				</div>
 			</div>
-			<% end_if %>
+		<% end_if %>
 	    <!-- About Section End -->
-
+	    
 	    <!-- Howtogetinvolved Section Start -->
 		    <% if $AddNewGetInvolved %>
 		    	<div class="get-involved">
@@ -87,7 +93,7 @@
 	    
 	    <!-- Gallary Section Start -->
 	    	
-	    	<% if $Gallary %>
+	    <% if $Gallary %>
 	    	<div class="container">
 	    		<div class="gallary-section">
 		    		<h1>F3 Series Highlight Gallary</h1>
@@ -98,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<% end_if %>
+		<% end_if %>
 			<!-- Gallary Section End -->
 
 		<% if $Client %>
@@ -121,31 +127,31 @@
 
 	   </div>
 	  <% end_if %>
-<!-- End of Home page -->
+	<!-- End of Home page -->
 	<!-- Start of Cars and classes -->
 	  	
 	    <!-- start Cars and classes Data  -->	
 	    	<% if $AddCarsAndClasses %>
 	    		<div class="cars-classes">
 		    		<div class="slider-section owl-carousel owl-theme">
-								<% if $Photo %>
-									<div class="homeimage cars-banner">
-									  $Photo.$ScaleWidth(800)
-									</div>
-								<% end_if %>
-						</div>
+						<% if $Photo %>
+							<div class="homeimage cars-banner">
+							  $Photo.$ScaleWidth(800)
+							</div>
+						<% end_if %>
+					</div>
     				<div class="row f-row">
 				    	<% loop $AddCarsAndClasses %>
 				    		<div class="car-wrap">
 					    		<div class="container">
 					    			<div class="col-md-6 car-left">
 							    		<h1>$Name</h1>
-									      <div class="cars-desc">$Description</div>
-							    			<div class="card-wrap-cars">
-							    				<div class="cars-value-wrap">
-									        	<div class="classes-name"> Statistics: </div> 
+									    <div class="cars-desc">$Description</div>
+						    			<div class="card-wrap-cars">
+						    				<div class="cars-value-wrap">
+									        	<div class="classes-name"> Statistics: </div>
 									        	<div class="classes-value">$Stastics</div>
-									        </div>
+								        	</div>
 									        <div class="cars-value-wrap">
 									        	<div class="classes-name">Power: </div> 
 									        	<div class="classes-value">$Power</div>
@@ -153,21 +159,21 @@
 									        <div class="cars-value-wrap weight">
 										        <div class="classes-name"> Weight: </div>
 										        <div class="classes-value">$Weight</div>
-										      </div>
-										        <div class="read-more"><a>Read More</a></div>
-									    </div>
-									  </div>
-						        <div class="col-md-6 car-right">
-							        <div class="photo-wrap owl-carousel owl-theme">
-							        	<ul class="item-ul">
-											   	<% loop $Photo %>
-												  	<li class="item-li right-left-slant">$ScaleWidth(800)</li>
-													<% end_loop %>
-												</ul>
+										    </div>
+									    	<div class="read-more"><a>Read More</a></div>
+								    	</div>
+									</div>
+							        <div class="col-md-6 car-right">
+								        <div class="photo-wrap owl-carousel owl-theme">
+								        	<ul class="item-ul">
+												   	<% loop $Photo %>
+													  	<li class="item-li right-left-slant">$ScaleWidth(800)</li>
+														<% end_loop %>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 							<% end_loop %>
 						</div>
 					</div>
