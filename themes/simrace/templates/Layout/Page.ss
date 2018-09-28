@@ -35,18 +35,17 @@
       <% end_if %>
     <!-- Event Section End -->
     <% if $ClassName == 'Calendar\Component\Calendar' %>
-      <div class="slider-section owl-carousel owl-theme">
-        <% if $Photo %>
-          <div class="homeimage">
-            $Photo.$ScaleWidth(800)
-          </div>
-        <% end_if %>
-      </div>
-  		<div class="container">
-  			<div id="bootstrapModalFullCalendar" class="calendar"></div>
-  		</div>
+		<div class="slider-section owl-carousel owl-theme">
+			<% if $Photo %>
+	      		<div class="homeimage">
+	        		$Photo.$ScaleWidth(800)
+	      		</div>
+	    	<% end_if %>
+	  	</div>
+		<div class="container">
+			<div id="bootstrapModalFullCalendar" class="calendar"></div>
+		</div>
 	 <% end_if %>
-
 
       <!-- About Section Start -->
       <% if $About %>
@@ -93,46 +92,55 @@
               </div>
             </div>
             </div>
-      <% end_if %>
-      <!-- Howtogetinvolved Section End -->
+      	<% end_if %>
+      	<!-- Howtogetinvolved Section End -->
       
-      <!-- Gallary Section Start -->
-        
-        <% if $Gallary %>
-        <div class="container">
-          <div class="gallary-section">
-            <h1>F3 Series Highlight Gallary</h1>
-            <div class="image-wrap">
-              <% loop $Gallary %>
-              $ScaleWidth(800)
-            <% end_loop %>
-          </div>
-        </div>
-      </div>
-      <% end_if %>
-      <!-- Gallary Section End -->
+      	<!-- News section start -->
+      	<% if $NewsImage && $NewsTitle %>
+		    <div class="news">
+		    	<div class="container">
+					<div class="news-title">$NewsTitle</div>     		
+					<div class="news-image">$NewsImage.$ScaleWidth(800)</div>     		
+		      	</div>
+		    </div>
+	   	<% end_if %>
+      	<!-- News section End -->
+      
+	    <!-- Gallary Section Start -->
+	        
+	    <% if $Gallary %>
+	    	<div class="container">
+	          <div class="gallary-section">
+	            <h1>F3 Series Highlight Gallary</h1>
+	            <div class="image-wrap">
+	              <% loop $Gallary %>
+	              $ScaleWidth(800)
+	            <% end_loop %>
+	          </div>
+	        </div>
+	      </div>
+	    <% end_if %>
+      	<!-- Gallary Section End -->
 		
+      	<!-- Clients Section Start -->
+    	<% if $Client %>
+	    	<div class="bg-img">
+	      		<div class="section-our-client">
+	        		<div class="container">
+	          			<h1>Our Clients</h1>
+	            		<div class="client-item-wrap">
+	              			<% loop $Client %>
+	                			<div class="item">
+	                  				$ClientPhoto
+	                			</div>
+	              			<% end_loop %>
+	            		</div>
+	        		</div>
+	      		</div>
+	     	</div>
+   	 	<% end_if %>
+    	<!-- Clients Section End -->
 
-    <% if $Client %>
-    <div class="bg-img">
-      <!-- Clients Section Start -->
-      <div class="section-our-client">
-        <div class="container">
-          
-            <h1>Our Clients</h1>
-            <div class="client-item-wrap">
-              <% loop $Client %>
-                <div class="item">
-                  $ClientPhoto
-                </div>
-              <% end_loop %>
-            </div>
-        </div>
-      </div>
-      <!-- Clients Section End -->
-
-     </div>
-    <% end_if %>
 <!-- End of Home page -->
   
    <!-- start Cars and classes Data  --> 
@@ -189,8 +197,10 @@
               <% end_loop %>
             </div>
           </div>
-        <% else %>
-          <!-- Video Section Start -->
+        <% end_if %>
+      <!-- End  Cars and classes Data -->
+       <!-- Video Section Start -->
+        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Event\Component\Events' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
               <div class="image-wrap">
@@ -201,9 +211,8 @@
               </div>
               <button class="btn btn-plain">VIEW ALL MEDIA</button>
             </div>
-          <!-- Video Section End -->
         <% end_if %>
-      <!-- End  Cars and classes Data -->
-      <!-- End  Cars and classes Data -->
-    <!-- End cars and classes page -->
+    <!-- Video Section End -->
+
+
 </div>
