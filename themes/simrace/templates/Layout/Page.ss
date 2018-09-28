@@ -35,18 +35,21 @@
       <% end_if %>
     <!-- Event Section End -->
     <% if $ClassName == 'Calendar\Component\Calendar' %>
-    	<% loop $Event %>
-    		$Event
-    	<% end_loop %>
+		<div class="slider-section owl-carousel owl-theme">
+			<% if $Photo %>
+	      		<div class="homeimage">
+	        		$Photo.$ScaleWidth(800)
+	      		</div>
+	    	<% end_if %>
+	  	</div>
 		<div class="container">
-			<div id="bootstrapModalFullCalendar" data-source="$Event"></div>
+			<div id="bootstrapModalFullCalendar" class="calendar"></div>
 		</div>
-	<% end_if %>
-
+	 <% end_if %>
 
       <!-- About Section Start -->
       <% if $About %>
-      <div class="about-car bg-img">
+      <div class="about-car bg-img bg-square">
         <div class="container">
             <div class="row about-wrap">
               <div class="col-md-6 img-overlap">
@@ -89,142 +92,58 @@
               </div>
             </div>
             </div>
-      <% end_if %>
-      <!-- Howtogetinvolved Section End -->
-      <!-- News section start -->
-      <% if $NewsImage && $NewsTitle %>
-	      <div class="news">
-	      	<div>
-				<div class="news-title">$NewsTitle</div>     		
-				<div class="news-image">$NewsImage.$ScaleWidth(800)</div>     		
-	      	</div>
-	      </div>
-	      <% end_if %>
-      <!-- News section End -->
+      	<% end_if %>
+      	<!-- Howtogetinvolved Section End -->
       
-      <!-- Gallary Section Start -->
-        
-        <% if $Gallary %>
-        <div class="container">
-          <div class="gallary-section">
-            <h1>F3 Series Highlight Gallary</h1>
-            <div class="image-wrap">
-              <% loop $Gallary %>
-              $ScaleWidth(800)
-            <% end_loop %>
-          </div>
-        </div>
-      </div>
-      <% end_if %>
-      <!-- Gallary Section End -->
-		<!-- Event Section Start -->
-		<% if $AddEvent %>
-			<div class="racing-series-section">
-				<h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
-				<div class="container">
-					<% loop $AddEvent %>
-				    	<div class="item-event">
-				    		<div class="banner-caption upcomming-race">UPCOMMING</div>
-				       		<div class="banner-caption month">$StartDate.Format('MMMM')</div>
-				       		<div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
-				        	<div class="banner-caption">$Photo</div>
-					        <div class="banner-captionrace-no">Race $Race</div>
-					        <?php echo"DFF"; ?>
-					        <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartDate.Format('HH:mm') - $EndDate.Format('HH:mm')</div>
-				      </div>
-				    <% end_loop %>
-			    </div>
-			</div>
-		<% end_if %>
-		<!-- Event Section End -->
-	    <!-- About Section Start -->
-	    <% if $About %>
-			<div class="about-car bg-img">
-				<div class="container">
-			    	<div class="row about-wrap">
-				    	<div class="col-md-6 img-overlap">
-				    		<div class=" about-image left-right-image">
-				    			$About
-				    		</div>
-				    	</div>
-				    	<div class="col-md-6 img-overlap img-desc right-left-slant">
-				    		<div class=" about-desc-tab">
-				    			<p class="about-car-heading">About the car</p>
-						    	<p class="desc-about"> $Description </p> 
-						    	<div class="email-num">
-						    		$Email
-						    		$Number
-						    	</div>
-						    </div>
-					    </div>
-					  </div>
-				</div>
-			</div>
-		<% end_if %>
-	    <!-- About Section End -->
-	    
-	    <!-- Howtogetinvolved Section Start -->
-		    <% if $AddNewGetInvolved %>
-		    	<div class="get-involved">
-		    		<div class="container">
-			    		<h1>Learn How to get Involved</h1>
-			    		<div class="card-wrap">
-						    <% loop $AddNewGetInvolved %>
-			    				<div class="card">
-							        <div class="client-caption-title">$Titles</div>
-							        <div class="client-body">
-								        <div class="price">$Price</div>
-								        <div class="about">$About</div>
-								        <button class="btn btn-plain">signup</button>
-								      </div>
-					    		</div>
-					    	<% end_loop %>
-				    	</div>
-				    </div>
+      	<!-- News section start -->
+      	<% if $NewsImage && $NewsTitle %>
+		    <div class="news">
+		    	<div class="container">
+					<div class="news-title">$NewsTitle</div>     		
+					<div class="news-image">$NewsImage.$ScaleWidth(800)</div>     		
 		      	</div>
-			<% end_if %>
-	    <!-- Howtogetinvolved Section End -->
-	    
+		    </div>
+	   	<% end_if %>
+      	<!-- News section End -->
+      
 	    <!-- Gallary Section Start -->
-	    	
+	        
 	    <% if $Gallary %>
 	    	<div class="container">
-	    		<div class="gallary-section">
-		    		<h1>F3 Series Highlight Gallary</h1>
-	    			<div class="image-wrap">
-					   	<% loop $Gallary %>
-						  $ScaleWidth(800)
-						<% end_loop %>
-					</div>
-				</div>
-			</div>
-		<% end_if %>
-			<!-- Gallary Section End -->
+	          <div class="gallary-section">
+	            <h1>F3 Series Highlight Gallary</h1>
+	            <div class="image-wrap">
+	              <% loop $Gallary %>
+	              $ScaleWidth(800)
+	            <% end_loop %>
+	          </div>
+	        </div>
+	      </div>
+	    <% end_if %>
+      	<!-- Gallary Section End -->
+		
+      	<!-- Clients Section Start -->
+    	<% if $Client %>
+	    	<div class="bg-img">
+	      		<div class="section-our-client">
+	        		<div class="container">
+	          			<h1>Our Clients</h1>
+	            		<div class="client-item-wrap">
+	              			<% loop $Client %>
+	                			<div class="item">
+	                  				$ClientPhoto
+	                			</div>
+	              			<% end_loop %>
+	            		</div>
+	        		</div>
+	      		</div>
+	     	</div>
+   	 	<% end_if %>
+    	<!-- Clients Section End -->
 
-    <% if $Client %>
-    <div class="bg-img">
-      <!-- Clients Section Start -->
-      <div class="section-our-client">
-        <div class="container">
-          
-            <h1>Our Clients</h1>
-            <div class="client-item-wrap">
-              <% loop $Client %>
-                <div class="item">
-                  $ClientPhoto
-                </div>
-              <% end_loop %>
-            </div>
-        </div>
-      </div>
-      <!-- Clients Section End -->
-
-     </div>
-    <% end_if %>
 <!-- End of Home page -->
-  <!-- Start of Cars and classes -->
-      
-      <!-- start Cars and classes Data  --> 
+  
+   <!-- start Cars and classes Data  --> 
         <% if $AddCarsAndClasses %>
           <div class="cars-classes">
             <div class="slider-section owl-carousel owl-theme">
@@ -234,11 +153,11 @@
                   </div>
                 <% end_if %>
             </div>
-            <div class="row f-row">
+            <div class="f-row">
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" id="big">
                   <div class="container slider">
-                    <div class="col-md-6 car-left">
+                    <div class="car-left">
                       <h1>$Name</h1>
                         <div class="cars-desc">$Description</div>
                         <div class="card-wrap-cars">
@@ -257,7 +176,7 @@
                             <div class="read-more"><a>Read More</a></div>
                       </div>
                     </div>
-                    <div class="col-md-6 car-right">
+                    <div class="car-right">
                       <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
                         <ul class="item-ul">
                           <% loop $Photo %>
@@ -280,68 +199,7 @@
           </div>
         <% end_if %>
       <!-- End  Cars and classes Data -->
-    <!-- End cars and classes page -->
-    
-      <!-- start Cars and classes Data  --> 
-        <% if $AddCarsAndClasses %>
-          <div class="cars-classes">
-            <div class="slider-section owl-carousel owl-theme">
-                <% if $Photo %>
-                  <div class="homeimage cars-banner">
-                    $Photo.$ScaleWidth(800)
-                  </div>
-                <% end_if %>
-            </div>
-            <div class="row f-row">
-              <% loop $AddCarsAndClasses %>
-                <div class="car-wrap" id="big">
-                  <div class="container slider">
-                    <div class="col-md-6 car-left">
-                      <h1>$Name</h1>
-                        <div class="cars-desc">$Description</div>
-                        <div class="card-wrap-cars">
-                          <div class="cars-value-wrap">
-                            <div class="classes-name"> Statistics: </div> 
-                            <div class="classes-value">$Stastics</div>
-                          </div>
-                          <div class="cars-value-wrap">
-                            <div class="classes-name">Power: </div> 
-                            <div class="classes-value">$Power</div>
-                          </div>
-                          <div class="cars-value-wrap weight">
-                            <div class="classes-name"> Weight: </div>
-                            <div class="classes-value">$Weight</div>
-                          </div>
-                            <div class="read-more"><a>Read More</a></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 car-right">
-                      <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
-                        <ul class="item-ul">
-                          <% loop $Photo %>
-                            <li class="item-li right-left-slant">$ScaleWidth(800)</li>
-                          <% end_loop %>
-                        </ul>
-                      </div>
-                      <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
-                        <ul class="item-ul">
-                          <% loop $Photo %>
-                            <li class="item-li ">$ScaleWidth(800)</li>
-                          <% end_loop %>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <% end_loop %>
-            </div>
-          </div>
-        <% end_if %>
-        <!-- End  Cars and classes Data -->
-    <!-- End cars and classes page -->
-
-    <!-- Video Section Start -->
-
+       <!-- Video Section Start -->
         <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Event\Component\Events' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
@@ -354,6 +212,7 @@
               <button class="btn btn-plain">VIEW ALL MEDIA</button>
             </div>
         <% end_if %>
-    <!-- Video Section Start -->
+    <!-- Video Section End -->
+
 
 </div>
