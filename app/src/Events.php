@@ -68,22 +68,25 @@ class Events extends Page
     ];
     private static $many_many = [
         'HomePhoto' => Image::class,
-        'Gallary' => Image::class
+        'Gallary' => Image::class,
     ];
     private static $has_one = [
         'About' => Image::class,
+        'NewsImage' => Image::class,
     ];
     //...
     private static $owns = [
         'HomePhoto',
         'Gallary',
-        'About'
+        'About',
+        'NewsImage'
     ];
 
     private static $db = [
       "Email" => "Varchar(255)",
       "Number" => "Varchar(255)",
-      "Description" => "Text"
+      "Description" => "Text",
+      "NewsTitle" => "Varchar(255)"
     ];
 
     private static $table_name = 'EventGallarypage';
@@ -232,6 +235,8 @@ SQL;
             $fields->addFieldToTab('Root.About',new EmailField('Email','Email'));
             $fields->addFieldToTab('Root.About',new TextField('Number','Call'));
             $fields->addFieldToTab('Root.About',new TextareaField ('Description','Description'));
+            $fields->addFieldToTab('Root.News',new TextField('NewsTitle','News Title'));
+            $fields->addFieldToTab('Root.News', UploadField::create('NewsImage'));
 
         });
 
