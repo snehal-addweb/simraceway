@@ -34,15 +34,6 @@
 			</div>
 		<% end_if %>
 		<!-- Event Section End -->
-
-		<!-- Calendar Section Start -->
-		<% if $ClassName == 'Calendar\Component\Calendar' %>
-			<div class="container">
-				<div id="bootstrapModalFullCalendar" data-view='$FullCalendarView' data-source="$Link(eventsdata)"></div>
-			</div>
-		<% end_if %>
-		<!-- Calendar section End-->
-
 	    <!-- About Section Start -->
 	    <% if $About %>
 			<div class="about-car bg-img">
