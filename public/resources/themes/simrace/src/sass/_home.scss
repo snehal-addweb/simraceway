@@ -257,13 +257,15 @@
     background-size: 300px 250px;
     @media only screen and (max-width: 1300px) {
       background-position: right 24px top 76px;
-    }/*
-    @media only screen and (max-width: 1280px) {
-      background-position: right 24px top 76px;
-    }*/
+    }
     @media only screen and (max-width: 1080px) {
       background-size: 240px 206px;
     }
+  }
+  &.bg-square {
+    background-image: url('../images/square.png');
+    background-position: right 141px bottom 76px;
+    background-size: 250px 200px;
   }
 }
 

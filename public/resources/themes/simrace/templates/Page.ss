@@ -41,6 +41,8 @@ Change it, enhance it and most importantly enjoy it!
 <% include Footer %>
 <% require javascript('//code.jquery.com/jquery-3.3.1.min.js') %>
 <% require themedJavascript('bootstrap') %>
+<% require themedCSS('owl.carousel2.thumbs.js') %>
+<% require themedCSS('owl.carousel2.thumbs.min.js') %>
 <% require themedJavascript('slider') %>
 
 </body>
