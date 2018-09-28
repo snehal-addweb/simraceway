@@ -35,8 +35,11 @@
       <% end_if %>
     <!-- Event Section End -->
     <% if $ClassName == 'Calendar\Component\Calendar' %>
+    	<% loop $Event %>
+    		$Event
+    	<% end_loop %>
 		<div class="container">
-			<div id="bootstrapModalFullCalendar"></div>
+			<div id="bootstrapModalFullCalendar" data-source="$Event"></div>
 		</div>
 	<% end_if %>
 
@@ -88,6 +91,16 @@
             </div>
       <% end_if %>
       <!-- Howtogetinvolved Section End -->
+      <!-- News section start -->
+      <% if $NewsImage && $NewsTitle %>
+	      <div class="news">
+	      	<div>
+				<div class="news-title">$NewsTitle</div>     		
+				<div class="news-image">$NewsImage.$ScaleWidth(800)</div>     		
+	      	</div>
+	      </div>
+	      <% end_if %>
+      <!-- News section End -->
       
       <!-- Gallary Section Start -->
         
@@ -265,19 +278,6 @@
               <% end_loop %>
             </div>
           </div>
-        <% else %>
-          <!-- Video Section Start -->
-            <div class="latest-video">
-              <h1>Latest Video's</h1>
-              <div class="image-wrap">
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
-              </div>
-              <button class="btn btn-plain">VIEW ALL MEDIA</button>
-            </div>
-          <!-- Video Section End -->
         <% end_if %>
       <!-- End  Cars and classes Data -->
     <!-- End cars and classes page -->
@@ -336,8 +336,13 @@
               <% end_loop %>
             </div>
           </div>
-        <% else %>
-          <!-- Video Section Start -->
+        <% end_if %>
+        <!-- End  Cars and classes Data -->
+    <!-- End cars and classes page -->
+
+    <!-- Video Section Start -->
+
+        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Event\Component\Events' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
               <div class="image-wrap">
@@ -348,8 +353,7 @@
               </div>
               <button class="btn btn-plain">VIEW ALL MEDIA</button>
             </div>
-          <!-- Video Section End -->
         <% end_if %>
-      <!-- End  Cars and classes Data -->
-    <!-- End cars and classes page -->
+    <!-- Video Section Start -->
+
 </div>
