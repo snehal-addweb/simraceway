@@ -63,6 +63,7 @@
                   <p class="desc-about"> $Description </p> 
                   <div class="email-num">
                     $Email
+                    <span>or</span>
                     $Number
                   </div>
                 </div>
@@ -96,14 +97,6 @@
       	<!-- Howtogetinvolved Section End -->
       
       	<!-- News section start -->
-      	<% if $NewsImage && $NewsTitle %>
-		    <div class="news">
-		    	<div class="container">
-					<div class="news-title">$NewsTitle</div>     		
-					<div class="news-image">$NewsImage.$ScaleWidth(800)</div>     		
-		      	</div>
-		    </div>
-	   	<% end_if %>
       	<!-- News section End -->
       
 	    <!-- Gallary Section Start -->
@@ -213,6 +206,7 @@
             </div>
         <% end_if %>
     <!-- Video Section End -->
-
-
+  <article>
+  $Form
+  $comment
 </div>
