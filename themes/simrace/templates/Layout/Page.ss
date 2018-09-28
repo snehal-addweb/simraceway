@@ -34,7 +34,11 @@
       </div>
       <% end_if %>
     <!-- Event Section End -->
-
+    <% if $ClassName == 'Calendar\Component\Calendar' %>
+		<div class="container">
+			<div id="bootstrapModalFullCalendar"></div>
+		</div>
+	<% end_if %>
 
 
       <!-- About Section Start -->
