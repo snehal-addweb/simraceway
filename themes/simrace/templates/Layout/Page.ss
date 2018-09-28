@@ -24,7 +24,7 @@
                 <div class="banner-caption upcomming-race">UPCOMMING</div>
                   <div class="banner-caption month">$StartDate.Format('MMMM')</div>
                   <div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
-                  <div class="banner-caption">$Photo</div>
+                  <div class="banner-caption image">$Photo</div>
                   <div class="banner-captionrace-no">Race $Race</div>
                   <?php echo"DFF"; ?>
                   <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartDate.Format('HH:mm') - $EndDate.Format('HH:mm')</div>
@@ -191,6 +191,29 @@
             </div>
           </div>
         <% end_if %>
+        <!-- Stanging and result page starts -->
+        
+        <% if Reports %>
+        	<% if $Photo %>
+		        <div class="homeimage">
+		          $Photo.$ScaleWidth(800)
+		        </div>
+      		<% end_if %>
+        	<div class="reports">
+        		<div class="container">
+		        	<% loop Reports %>
+		        		<div class="report-image">
+		        		<% loop $Photos %>
+		        			$ScaleWidth(800)
+		        		<% end_loop %></div>
+		        		<div class="reports-desc">$Description</div>
+		        	<% end_loop %>
+		        </div>
+	        </div>
+        <% end_if %>
+        
+        <!-- Stanging and result page End -->
+
       <!-- End  Cars and classes Data -->
        <!-- Video Section Start -->
         <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Event\Component\Events' %>

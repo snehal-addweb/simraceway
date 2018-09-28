@@ -17,7 +17,7 @@
 						<label>$SiteConfig.CopyRight</label><br/>
 
 					</div>
-					<div class="footer-right">
+					<div class="col-md-6 footer-right">
 						<div class="col-md-2 content">
 							<div  class="quick-link">
 								<h3>QUICK LINKS</h3>

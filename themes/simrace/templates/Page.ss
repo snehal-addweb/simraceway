@@ -49,35 +49,6 @@ Change it, enhance it and most importantly enjoy it!
 <% require themedJavascript('moment') %>
 <% require themedJavascript('jquery-ui.min') %>
 <% require themedJavascript('fullcalendar') %>
-<script type="text/javascript">
-	 jQuery.noConflict();
-
-		(function($) {
-
-		$(document).ready(function() {
-		    $('#bootstrapModalFullCalendar').fullCalendar({
-		    	header: {
-					left: '',
-					center: 'prev title next',
-					right: ''
-				},
-
-				events:
-				[
-					{
-						"allday":"true",
-						"title":"my new event smndnbsmnd",
-						"start":"2018-09-08",
-						"end":"2018-09-08",
-					}
-				]
-
-			});
-		});
-}(jQuery));
-    
-    
-</script>
 </body>
 </html>
 
