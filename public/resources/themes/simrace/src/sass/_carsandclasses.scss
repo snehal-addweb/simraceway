@@ -18,10 +18,7 @@
       @include css3-sufix(width, calc(100% + 10px));
       @include css3-prefix(transform, rotate(4deg));
     }
-  }/*
-  .slider-section:nth-child(2n) {
-    flex-direction: row-reverse;
-  }*/
+  }
   .car-wrap {
     display: inline-block;
     width: 100%;
