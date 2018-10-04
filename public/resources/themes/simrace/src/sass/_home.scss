@@ -8,7 +8,7 @@
   }
   &::before {
     position: absolute;
-    top: 45px;
+    top: 35px;
     right: 0;
     left: 0;
     display: block;
@@ -77,9 +77,10 @@
     }
     &::after {
       position: absolute;
-      bottom: -54px;
+      bottom: -67px;
       left: -10px;
-      height: 115px;
+      height: 150px;
+      /*height: 115px;*/
       background-color: $white;
       content: '';
       @include css3-sufix(width, calc(100% + 10px));
@@ -386,6 +387,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 992px) {
+          font-size: 18px;
+        }
       }
       .client-body {
         padding: 15px;
@@ -407,10 +411,12 @@
 .latest-video {
   text-align: center;
   .image-wrap {
-    display: inline-block;
+    display: flex;
     width: 100%;
     padding: 0 100px;
     column-count: unset;
+    flex-wrap: wrap;
+    justify-content: center;
     @media only screen and (max-width: 1180px) {
       display: flex;
       padding: 0 90px;
