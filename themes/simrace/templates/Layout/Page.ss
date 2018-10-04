@@ -13,7 +13,11 @@
     </div>
 
     <!-- Home Section End -->
-
+    <% if $Events %>
+      <% loop $Events %>
+          $Events.$Title
+      <% end_loop %>
+    <% end_if %>
     <!-- Event Section Start -->
       <% if $AddEvent %>
       <div class="racing-series-section">
@@ -34,18 +38,31 @@
       </div>
       <% end_if %>
     <!-- Event Section End -->
+    
     <% if $ClassName == 'Calendar\Component\Calendar' %>
-		<div class="slider-section owl-carousel owl-theme">
-			<% if $Photo %>
+		  <div class="slider-section owl-carousel owl-theme">
+		    <% if $Photo %>
 	      		<div class="homeimage">
 	        		$Photo.$ScaleWidth(800)
 	      		</div>
 	    	<% end_if %>
 	  	</div>
-		<div class="container">
-			<div id="bootstrapModalFullCalendar" class="calendar"></div>
-		</div>
-	 <% end_if %>
+        <!-- <% if $Event %>
+          <% loop $Event %>
+            <div class="event">
+              <input type="hidden" name="EventName" value="<% if EventName %>$EventName<% end_if %>" class="EventName">
+              <input type="hidden" name="StartDate" class="StartDate" value="<% if StartDate %>$StartDate.Format('y-MM-dd')<% end_if %>">
+              <input type="hidden" name="EndDate" class="EndDate" value="<% if EndDate %>$EndDate.Format('y-MM-dd')<% end_if %>">
+              <input type="hidden" name="StartTime" class="StartTime" value="<% if Time %>$StartDate.Format('HH:mm')<% end_if %>"">
+              <input type="hidden" name="EndTime" class="EndTime" value="<% if Time %>$EndDate.Format('HH:mm')<% end_if %>"">
+            </div>
+          <% end_loop %>
+        <% end_if %> -->
+      </div>
+  		<div class="container">
+  			<div id="bootstrapModalFullCalendar" class="calendar"></div>
+  		</div>
+	  <% end_if %>
 
       <!-- About Section Start -->
       <% if $About %>
@@ -150,39 +167,45 @@
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" id="big">
                   <div class="container slider">
-                    <div class="car-left">
-                      <h1>$Name</h1>
-                        <div class="cars-desc">$Description</div>
-                        <div class="card-wrap-cars">
-                          <div class="cars-value-wrap">
-                            <div class="classes-name"> Statistics: </div> 
-                            <div class="classes-value">$Stastics</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="car-left">
+                          <h1>$Name</h1>
+                            <div class="cars-desc">$Description</div>
+                            <div class="card-wrap-cars">
+                              <div class="cars-value-wrap">
+                                <div class="classes-name"> Statistics: </div> 
+                                <div class="classes-value">$Stastics</div>
+                              </div>
+                              <div class="cars-value-wrap">
+                                <div class="classes-name">Power: </div> 
+                                <div class="classes-value">$Power</div>
+                              </div>
+                              <div class="cars-value-wrap weight">
+                                <div class="classes-name"> Weight: </div>
+                                <div class="classes-value">$Weight</div>
+                              </div>
+                                <div class="read-more"><a>Read More</a></div>
                           </div>
-                          <div class="cars-value-wrap">
-                            <div class="classes-name">Power: </div> 
-                            <div class="classes-value">$Power</div>
-                          </div>
-                          <div class="cars-value-wrap weight">
-                            <div class="classes-name"> Weight: </div>
-                            <div class="classes-value">$Weight</div>
-                          </div>
-                            <div class="read-more"><a>Read More</a></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="car-right">
-                      <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
-                        <ul class="item-ul">
-                          <% loop $Photo %>
-                            <li class="item-li right-left-slant">$ScaleWidth(800)</li>
-                          <% end_loop %>
-                        </ul>
-                      </div>
-                      <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
-                        <ul class="item-ul">
-                          <% loop $Photo %>
-                            <li class="item-li ">$ScaleWidth(800)</li>
-                          <% end_loop %>
-                        </ul>
+                      <div class="col-md-6">
+                        <div class="car-right">
+                          <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
+                            <ul class="item-ul">
+                              <% loop $Photo %>
+                                <li class="item-li right-left-slant">$ScaleWidth(800)</li>
+                              <% end_loop %>
+                            </ul>
+                          </div>
+                          <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
+                            <ul class="item-ul">
+                              <% loop $Photo %>
+                                <li class="item-li ">$ScaleWidth(800)</li>
+                              <% end_loop %>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
