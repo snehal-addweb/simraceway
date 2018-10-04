@@ -137,44 +137,40 @@
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" id="big">
                   <div class="container slider">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="car-left">
-                          <h1>$Name</h1>
-                            <div class="cars-desc">$Description</div>
-                            <div class="card-wrap-cars">
-                              <div class="cars-value-wrap">
-                                <div class="classes-name"> Statistics: </div> 
-                                <div class="classes-value">$Stastics</div>
-                              </div>
-                              <div class="cars-value-wrap">
-                                <div class="classes-name">Power: </div> 
-                                <div class="classes-value">$Power</div>
-                              </div>
-                              <div class="cars-value-wrap weight">
-                                <div class="classes-name"> Weight: </div>
-                                <div class="classes-value">$Weight</div>
-                              </div>
-                                <div class="read-more"><a>Read More</a></div>
+                    <div class="car-left">
+                      <h1>$Name</h1>
+                        <div class="cars-desc">$Description</div>
+                        <div class="card-wrap-cars">
+                          <div class="cars-value-wrap">
+                            <div class="classes-name"> Statistics: </div> 
+                            <div class="classes-value">$Stastics</div>
                           </div>
-                        </div>
+                          <div class="cars-value-wrap">
+                            <div class="classes-name">Power: </div> 
+                            <div class="classes-value">$Power</div>
+                          </div>
+                          <div class="cars-value-wrap weight">
+                            <div class="classes-name"> Weight: </div>
+                            <div class="classes-value">$Weight</div>
+                          </div>
+                            <div class="read-more"><a>Read More</a></div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="car-right">
-                          <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
-                            <ul class="item-ul">
-                              <% loop $Photo %>
-                                <li class="item-li right-left-slant">$ScaleWidth(800)</li>
-                              <% end_loop %>
-                            </ul>
-                          </div>
-                          <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
-                            <ul class="item-ul">
-                              <% loop $Photo %>
-                                <li class="item-li ">$ScaleWidth(800)</li>
-                              <% end_loop %>
-                            </ul>
-                          </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="car-right">
+                        <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
+                          <ul class="item-ul">
+                            <% loop $Photo %>
+                              <li class="item-li right-left-slant">$ScaleWidth(800)</li>
+                            <% end_loop %>
+                          </ul>
+                        </div>
+                        <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
+                          <ul class="item-ul">
+                            <% loop $Photo %>
+                              <li class="item-li ">$ScaleWidth(800)</li>
+                            <% end_loop %>
+                          </ul>
                         </div>
                       </div>
                     </div>
