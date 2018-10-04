@@ -1,5 +1,5 @@
 <?php
-namespace Event\Component;
+namespace Home\Component;
 
 use Page;
 use SilverStripe\Assets\Image;
@@ -10,7 +10,7 @@ use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TimeField;
 use SilverStripe\Forms\ButtonField;
-use SilverStripe\Forms\DatetimeField;
+use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
@@ -50,40 +50,40 @@ use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
 
-class AddEvent extends Page
+class Series extends Page
 {
     private static $db = [
-      "EventName" => "Varchar(255)",
-      "StartDate" => "Datetime",
-      "EndDate" => "Datetime",
-      "Race" => "Text"
+      "Year" => "Varchar(255)",
+      "Series" => "Varchar(255)"
     ];
 
     private static $can_be_root = false;
 
-    private static $table_name = 'AddEvent';
+    private static $table_name = 'Series';
 
     
      private static $has_one = [
-        'Photo' => Image::class,
+        'SeriesPhoto' => Image::class,
     ];  
     //...
     private static $owns = [
-        'Photo'
+        'SeriesPhoto'
     ];
     public function getCMSFields()
     {
         Requirements::css('silverstripe/userforms:client/dist/styles/userforms-cms.css');
-
+        // $year = array("2010" => "2010", "2011" => "2011", "2012"=> "2012");
+        $today = date("Y");
+        // for ($i=1950; $i<= $today ; $i++) { 
+        //     $year[$i] = $i;
+        // }
+        
         $this->beforeUpdateCMSFields(function ($fields) {
 
-            $fields->addFieldToTab('Root.AddEvent',new TextField('EventName','Event Name'));
-            $fields->addFieldToTab('Root.AddEvent',new DatetimeField('StartDate','Start Date'));
-            $fields->addFieldToTab('Root.AddEvent',new DatetimeField('EndDate','End Date'));
-            $fields->addFieldToTab('Root.AddEvent',new TextareaField('Race','Race'));
-/*            $fields->addFieldToTab('Root.AddEvent',$start = new TimeField('StartTime','Time'));
-            $fields->addFieldToTab('Root.AddEvent',new TimeField('EndTime','Time'));
-*/            $fields->addFieldToTab('Root.AddEvent',new UploadField('Photo'));
+            $fields->removeFieldFromTab('Root.Main',"Content");
+            $fields->addFieldToTab('Root.Main',  DropdownField::create('Year', 'Year',array("2010" => "2010", "2011" => "2011", "2012"=> "2012", "2013"=> "2013", "2014"=> "2014", "2015"=> "2015", "2016"=> "2016", "2017"=> "2017", "2018"=> "2018" ))->setEmptyString('Select one'));
+            $fields->addFieldToTab('Root.Main',new TextField('Series','Series Title'));
+            $fields->addFieldToTab('Root.Main', UploadField::create('SeriesPhoto'));
 
         });
 

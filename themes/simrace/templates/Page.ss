@@ -49,6 +49,42 @@ Change it, enhance it and most importantly enjoy it!
 <% require themedJavascript('moment') %>
 <% require themedJavascript('jquery-ui.min') %>
 <% require themedJavascript('fullcalendar') %>
+<script type="text/javascript">
+	jQuery.noConflict();
+
+		(function($) {
+
+		$(document).ready(function() {
+			var myElements = $(".event");
+			var eventsArray = Array();
+		    for (var i=0;i<myElements.length;i++) {
+		        eventsArray.push({
+		 			allDay:true,
+	                title: $(".Title").eq(i).attr("value"),
+	                start: $(".date").eq(i).attr("value"),
+	                end: $(".date").eq(i).attr("value"),
+	            })
+		    }
+		    console.log(eventsArray);
+		    $('#bootstrapModalFullCalendar').fullCalendar({
+		    	header: {
+					left: '',
+					center: 'prev title next',
+					right: ''
+				},
+
+				eventLimit: 3,
+		            views: {
+		              agenda: {
+		                eventLimit: true, 
+		              }
+		        	},
+				events:eventsArray,
+
+			});
+		});
+}(jQuery));
+</script>
 </body>
 </html>
 

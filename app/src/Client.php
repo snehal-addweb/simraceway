@@ -1,5 +1,5 @@
 <?php
-namespace Event\Component;
+namespace Home\Component;
 
 use Page;
 use SilverStripe\Assets\Image;

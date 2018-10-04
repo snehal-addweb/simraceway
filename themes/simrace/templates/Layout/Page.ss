@@ -13,30 +13,9 @@
     </div>
 
     <!-- Home Section End -->
-    <% if $Events %>
-      <% loop $Events %>
-          $Events.$Title
-      <% end_loop %>
-    <% end_if %>
+    
     <!-- Event Section Start -->
-      <% if $AddEvent %>
-      <div class="racing-series-section">
-        <h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
-        <div class="container">
-          <% loop $AddEvent %>
-              <div class="item-event">
-                <div class="banner-caption upcomming-race">UPCOMMING</div>
-                  <div class="banner-caption month">$StartDate.Format('MMMM')</div>
-                  <div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
-                  <div class="banner-caption image">$Photo</div>
-                  <div class="banner-captionrace-no">Race $Race</div>
-                  <?php echo"DFF"; ?>
-                  <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartDate.Format('HH:mm') - $EndDate.Format('HH:mm')</div>
-              </div>
-            <% end_loop %>
-          </div>
-      </div>
-      <% end_if %>
+      
     <!-- Event Section End -->
     
     <% if $ClassName == 'Calendar\Component\Calendar' %>
@@ -239,7 +218,7 @@
 
       <!-- End  Cars and classes Data -->
        <!-- Video Section Start -->
-        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Event\Component\Events' %>
+        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Home\Component\Home' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
               <div class="image-wrap">

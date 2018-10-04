@@ -1,5 +1,5 @@
 <?php
-namespace Event\Component;
+namespace Home\Component;
 
 use Page;
 use SilverStripe\Assets\Image;
@@ -51,17 +51,17 @@ use SilverStripe\Security\PermissionProvider;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
+use PurpleSpider\BasicCalendar\CalendarEntry;
+use PurpleSpider\BasicCalendar\CalendarPage;
 
-class Events extends Page
+class Home extends Page
 {
     private static $has_many = [
-        'AddEvent' => AddEvent::class,
         'Client' => Client::class,
         'AddNewGetInvolved' => AddNewGetInvolved::class,
         'Series' => Series::class
     ];
     private static $allowed_children = [
-        AddEvent::class,
         Client::class,
         AddNewGetInvolved::class,
         Series::class
@@ -97,79 +97,12 @@ class Events extends Page
 
         $this->beforeUpdateCMSFields(function ($fields) {
 
-            //For Display Events
-
-
-            $parentID = (!empty($this->ID)) ? (int) $this->ID : 0;
-
-            // get a list of all field names and values used for print and export CSV views of the GridField below.
-            $columnSQL = <<<SQL
-SELECT  "ID", "EventName", "StartDate", "EndDate", "place", "Time" FROM "Eventspage";
-SQL;
-            // Sanitise periods in title
-            $columns = array();
-
-            foreach (DB::query($columnSQL) as $name => $title) {
-                $columns[$name] = $title;
-            }
-
-            $config = GridFieldConfig::create();
-            $config->addComponent(new GridFieldToolbarHeader());
-            $config->addComponent($sort = new GridFieldSortableHeader());
-            $config->addComponent($filter = new UserFormsGridFieldFilterHeader());
-            $config->addComponent(new GridFieldDataColumns());
-            $config->addComponent(new GridFieldEditButton());
-            $config->addComponent(new GridFieldDeleteAction());
-            $config->addComponent(new GridFieldPageCount('toolbar-header-right'));
-            $config->addComponent($pagination = new GridFieldPaginator(25));
-            $config->addComponent(new GridFieldDetailForm());
-            $config->addComponent(new GridFieldButtonRow('after'));
-
-            // show user form items in the summary tab
-            $summaryarray = array(
-                'ID' => 'ID',
-                'EventName' => 'Event Name',
-                'StartDate' => 'Start Date',
-                'EndDate' => 'End Date',
-                'Race' => 'Race'
-            );
-
-            foreach (EditableFormField::get()->filter(array('ParentID' => $parentID)) as $eff) {
-                if ($eff->ShowInSummary) {
-                    $summaryarray[$eff->Name] = $eff->Title ?: $eff->Name;
-                }
-            }
-            
-            $config->getComponentByType(GridFieldDataColumns::class)->setDisplayFields($summaryarray);
-
-            
-            /**
-             * Support for {@link https://github.com/colymba/GridFieldBulkEditingTools}
-             */
-            if (class_exists(BulkManager::class)) {
-                $config->addComponent(new BulkManager);
-            }
-
-            $sort->setThrowExceptionOnBadDataType(false);
-            $filter->setThrowExceptionOnBadDataType(false);
-            $pagination->setThrowExceptionOnBadDataType(false);
-
-            $filter->setColumns($columns);
-
-            $submissions = GridField::create(
-                'Events',
-                '',
-                AddEvent::get(),
-                $config
-            );
-
-            $fields->addFieldToTab('Root.Events', $submissions);
 
              $parentId = (!empty($this->ID)) ? (int) $this->ID : 0;
 
             // get a list of all field names and values used for print and export CSV views of the GridField below.
             $columnSQL1 = <<<SQL
-SELECT  "ID", "EventName", "StartDate", "EndDate", "place", "Time" FROM "Eventspage";
+SELECT  "ID", "Name", "City" FROM "Client";
 SQL;
             // Sanitise periods in title
             $columnc = array();
@@ -227,7 +160,6 @@ SQL;
             );
             
             $fields->addFieldToTab('Root.Client', $clientsubmissions);
-            $fields->addFieldToTab('Root.Events', $submissions);
             $fields->removeFieldFromTab('Root.Main',"Content");
             $fields->addFieldToTab('Root.Gallary', UploadField::create('Gallary'));
             $fields->addFieldToTab('Root.Main', UploadField::create('HomePhoto'));
@@ -245,4 +177,9 @@ SQL;
 
         return $fields;
     }
+    public function getEvents()
+    {
+        return CalendarPage::get();
+    }
+
 }

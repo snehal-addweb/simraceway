@@ -1,3 +1,7 @@
 PurpleSpider\BasicCalendar\CalendarPage:
   extensions:
-    - CustomSiteConfig
+    - CustomCalendarPage
+
+PurpleSpider\BasicCalendar\CalendarEntry:
+  extensions:
+    - CustomCalendarEntry
