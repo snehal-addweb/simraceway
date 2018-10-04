@@ -13,36 +13,27 @@
     </div>
 
     <!-- Home Section End -->
-    
+   
     <!-- Event Section Start -->
-      
+      <% if $Event %>
+      <div class="racing-series-section">
+        <h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
+        <div class="container">
+          <% loop $Event %>
+              <div class="item-event">
+                <div class="banner-caption upcomming-race">UPCOMMING</div>
+                  <div class="banner-caption month">$Date.Format('MMMM')</div>
+                  <div class="banner-caption date">$Date.Format('d') - $EndDate.Format('d')</div>
+                  <div class="banner-caption image">$Image</div>
+                  <div class="banner-captionrace-no">Race $Race</div>
+                  <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $Time - $EndTime</div>
+              </div>
+            <% end_loop %>
+          </div>
+      </div>
+      <% end_if %>
     <!-- Event Section End -->
     
-    <% if $ClassName == 'Calendar\Component\Calendar' %>
-		  <div class="slider-section owl-carousel owl-theme">
-		    <% if $Photo %>
-	      		<div class="homeimage">
-	        		$Photo.$ScaleWidth(800)
-	      		</div>
-	    	<% end_if %>
-	  	</div>
-        <!-- <% if $Event %>
-          <% loop $Event %>
-            <div class="event">
-              <input type="hidden" name="EventName" value="<% if EventName %>$EventName<% end_if %>" class="EventName">
-              <input type="hidden" name="StartDate" class="StartDate" value="<% if StartDate %>$StartDate.Format('y-MM-dd')<% end_if %>">
-              <input type="hidden" name="EndDate" class="EndDate" value="<% if EndDate %>$EndDate.Format('y-MM-dd')<% end_if %>">
-              <input type="hidden" name="StartTime" class="StartTime" value="<% if Time %>$StartDate.Format('HH:mm')<% end_if %>"">
-              <input type="hidden" name="EndTime" class="EndTime" value="<% if Time %>$EndDate.Format('HH:mm')<% end_if %>"">
-            </div>
-          <% end_loop %>
-        <% end_if %> -->
-      </div>
-  		<div class="container">
-  			<div id="bootstrapModalFullCalendar" class="calendar"></div>
-  		</div>
-	  <% end_if %>
-
       <!-- About Section Start -->
       <% if $About %>
       <div class="about-car bg-img bg-square">

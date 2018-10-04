@@ -177,9 +177,9 @@ SQL;
 
         return $fields;
     }
-    public function getEvents()
+    public function getEvent()
     {
-        return CalendarPage::get();
+        return CalendarEntry::get();
     }
 
 }

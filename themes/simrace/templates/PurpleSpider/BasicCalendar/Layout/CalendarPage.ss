@@ -1,9 +1,5 @@
 <% require css("purplespider/basic-calendar: client/dist/css/calendar.css") %>
 
-<h1>$Title</h1>
-
-$Content
-
 <% if ShowPast %>
 
 	<% if getEvents(past) %>
