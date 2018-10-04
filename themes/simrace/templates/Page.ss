@@ -60,9 +60,9 @@ Change it, enhance it and most importantly enjoy it!
 		    for (var i=0;i<myElements.length;i++) {
 		        eventsArray.push({
 		 			allDay:true,
-	                title: $(".Title").eq(i).attr("value"),
+	                title: '<div class="event-title"> ' + $(".Title").eq(i).attr("value")+' </div>' + '<div class="event-Status"> ' + $(".Status").eq(i).attr("value")+' </div>' + '<div class="event-time"> ' + $(".time").eq(i).attr("value")+' - ' + $(".endtime").eq(i).attr("value")+' </div>',
 	                start: $(".date").eq(i).attr("value"),
-	                end: $(".date").eq(i).attr("value"),
+	                end: $(".enddate").eq(i).attr("value"),
 	            })
 		    }
 		    console.log(eventsArray);
@@ -80,6 +80,11 @@ Change it, enhance it and most importantly enjoy it!
 		              }
 		        	},
 				events:eventsArray,
+				eventRender: function( event, element, view ) {
+				 	var title = element.find( '.fc-title' );
+					title.html( title.text() );
+				}
+
 
 			});
 		});

@@ -136,7 +136,7 @@
             <div class="f-row">
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" id="big">
-                  <div class="container slider">
+                  <div class="slider">
                     <div class="car-left">
                       <h1>$Name</h1>
                         <div class="cars-desc">$Description</div>
@@ -156,22 +156,20 @@
                             <div class="read-more"><a>Read More</a></div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="car-right">
-                        <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
-                          <ul class="item-ul">
-                            <% loop $Photo %>
-                              <li class="item-li right-left-slant">$ScaleWidth(800)</li>
-                            <% end_loop %>
-                          </ul>
-                        </div>
-                        <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
-                          <ul class="item-ul">
-                            <% loop $Photo %>
-                              <li class="item-li ">$ScaleWidth(800)</li>
-                            <% end_loop %>
-                          </ul>
-                        </div>
+                    <div class="car-right">
+                      <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
+                        <ul class="item-ul">
+                          <% loop $Photo %>
+                            <li class="item-li right-left-slant">$ScaleWidth(800)</li>
+                          <% end_loop %>
+                        </ul>
+                      </div>
+                      <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
+                        <ul class="item-ul">
+                          <% loop $Photo %>
+                            <li class="item-li ">$ScaleWidth(800)</li>
+                          <% end_loop %>
+                        </ul>
                       </div>
                     </div>
                   </div>
