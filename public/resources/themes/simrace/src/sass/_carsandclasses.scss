@@ -41,12 +41,13 @@
       }
     }
     .car-left {
-      padding: 0 60px;
-      width: 50%;
+      float: left;
       display: inline-block;
+      width: 50%;
+      padding: 0 60px;
       @media only screen and (max-width: 992px) {
-        width: 100%;
         display: inline-block;
+        width: 100%;
       }
       h1 {
         padding: 20px 0;
@@ -87,11 +88,11 @@
     }
 
     .car-right {
-      width: 50%;
       display: inline-block;
+      width: 50%;
       @media only screen and (max-width: 992px) {
-        width: 100%;
         display: inline-block;
+        width: 100%;
       }
       .photo-wrap {
         .item-ul {
@@ -155,7 +156,8 @@
         .item-li {
           img {
             height: 451px;
-            width: 675px;
+            /*width: 675px;*/
+            width: 540px;
             @media only screen and (max-width: 992px) {
               width: 100%;
             }
@@ -172,6 +174,10 @@
             }
           }
         }
+      }
+
+      #thumbs1 {
+        list-style-type: none;
       }
     }
   }
