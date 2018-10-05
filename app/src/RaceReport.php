@@ -1,5 +1,5 @@
 <?php
-namespace Event\Component;
+namespace StandingAndResult\Component;
 
 use Page;
 use SilverStripe\Assets\Image;
@@ -10,6 +10,7 @@ use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TimeField;
 use SilverStripe\Forms\ButtonField;
+use SilverStripe\Forms\NumericField;
 use SilverStripe\Forms\DatetimeField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\FieldList;
@@ -49,25 +50,35 @@ use SilverStripe\Security\PermissionProvider;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
+use SilverStripe\ORM\FieldType\DBDate;
 
-class Reports extends Page
+class RaceReport extends Page
 {
     private static $db = [
       "Description" => "Text",
-      "Date" => "Date"
+      "Date" => DBDate::class,
+      "Race" => "Text",
+      "Name" => "Text",
     ];
 
     private static $can_be_root = false;
 
     private static $table_name = 'Reports';
 
+    private static $has_many = [
+        'Result' => Result::class,
+    ];
     
-    private static $many_many = [
-        'Photos' => Image::class,
+    private static $allowed_children = [
+        Result::class,
+    ];
+    
+    private static $has_one = [
+        'ReportPhoto' => Image::class,
     ];  
 
     private static $owns = [
-        'Photos'
+        'ReportPhoto'
     ];
 
     public function getCMSFields()
@@ -75,8 +86,11 @@ class Reports extends Page
         Requirements::css('silverstripe/userforms:client/dist/styles/userforms-cms.css');
 
         $this->beforeUpdateCMSFields(function ($fields) {
-            $fields->addFieldToTab('Root.Reports',new TextareaField('Description','Description'));
-            $fields->addFieldToTab('Root.Reports',new UploadField('Photos'));
+            $fields->addFieldToTab('Root.Report',new TextField('Name','Race Name'));
+            $fields->addFieldToTab('Root.Report',new TextField('Race','Race number'));
+            $fields->addFieldToTab('Root.Report',new TextareaField('Description','Description'));
+            $fields->addFieldToTab('Root.Report',new DateField('Date','Date'));
+            $fields->addFieldToTab('Root.Report',new UploadField('ReportPhoto'));
         });
 
         $fields = parent::getCMSFields();

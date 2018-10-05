@@ -51,8 +51,7 @@ use SilverStripe\Security\PermissionProvider;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
-use PurpleSpider\BasicCalendar\CalendarEntry;
-use PurpleSpider\BasicCalendar\CalendarPage;
+use StandingAndResult\Component\Race;
 
 class Home extends Page
 {
@@ -177,9 +176,9 @@ SQL;
 
         return $fields;
     }
-    public function getEvent()
+    public function getRaces()
     {
-        return CalendarEntry::get();
+        return Race::get();
     }
 
 }
