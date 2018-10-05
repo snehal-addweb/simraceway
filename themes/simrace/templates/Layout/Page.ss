@@ -136,7 +136,7 @@
             <div class="f-row">
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" id="big">
-                  <div class="slider">
+                  <div class="container slider">
                     <div class="car-left">
                       <h1>$Name</h1>
                         <div class="cars-desc">$Description</div>
