@@ -190,27 +190,35 @@
     <!-- End  Cars and classes Data -->
 
         <!-- Stanging and result page starts -->
-        <% if RaceReport %>
-          <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
-          <% loop $RaceReport %>
-            <div class="tab">
-              <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
-            </div>
-          <% end_loop %>
-          <% loop $RaceReport %>
-            <div id="$Race" class="tabcontent">
-                <div class="race-name-date">Race - $Race $Name ($Date)</div>
-                <div class="report-desc">$Description</div>
-                $ReportPhoto.ScaleWidth(800)
-                <% loop Result($ID) %>
-                    <div class="FinishingPosition">$FinishingPosition</div>
-                    <div class="driver">$Driver</div>
-                    <div class="LapTime">$LapTime</div>
-                <% end_loop %>
-            </div>
-          <% end_loop %>
-        <% end_if %>
         <% if $ClassName == 'StandingAndResult\Component\StandingAndResult' %>
+          <div class="slider-section owl-carousel owl-theme">
+            <% if $Photo %>
+              <div class="homeimage">
+                $Photo.ScaleWidth(800)
+              </div>
+            <% end_if %>
+          </div>
+          <% if RaceReport %>
+            <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
+            <% loop $RaceReport %>
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
+              </div>
+            <% end_loop %>
+            <% loop $RaceReport %>
+              <div id="$Race" class="tabcontent">
+                  <div class="race-name-date">Race - $Race $Name ($Date)</div>
+                  <div class="report-desc">$Description</div>
+                  $ReportPhoto.ScaleWidth(800)
+                  <% loop Result($ID) %>
+                      <div class="FinishingPosition">$FinishingPosition</div>
+                      <div class="driver">$Driver</div>
+                      <div class="LapTime">$LapTime</div>
+                  <% end_loop %>
+              </div>
+            <% end_loop %>
+          <% end_if %>
+        
           <% if $ResultsGallary %>
             <div class="container">
               <div class="gallary-section">
@@ -223,10 +231,11 @@
               </div>
             </div>
           <% end_if %>
-        <% end_if %>
+        
         <% if $Content %>
           <div class="content-upto-footer">$Content</div>
         <% end_if %>
+      <% end_if %>
         
         <!-- Standing and result page End -->
 
