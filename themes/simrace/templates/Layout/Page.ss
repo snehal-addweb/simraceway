@@ -85,11 +85,11 @@
       
       	<!-- News section start -->
         <% if $NewsImage && $NewsTitle %>
-          <div class="news">
-            <div class="container">
-            <div class="news-title">$NewsTitle</div>        
-            <div class="news-image">$NewsImage.$ScaleWidth(800)</div>         
-              </div>
+          <div class="bg-img">
+            <div class="news">
+              <div class="news-title">$NewsTitle</div>        
+              <div class="news-image">$NewsImage.$ScaleWidth(800)</div> 
+            </div>
           </div>
         <% end_if %>
         <!-- News section End -->
@@ -199,26 +199,29 @@
             <% end_if %>
           </div>
           <% if RaceReport %>
-            <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
-            <% loop $RaceReport %>
-              <div class="tab">
-                <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
+            <div class="container">
+              <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
+              <div class="tab-scoll">
+                <% loop $RaceReport %>
+                  <div class="tab">
+                    <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
+                  </div>
+                <% end_loop %>
               </div>
-            <% end_loop %>
-            <% loop $RaceReport %>
-              <div id="$Race" class="tabcontent">
-                  <div class="race-name-date">Race - $Race $Name ($Date)</div>
-                  <div class="report-desc">$Description</div>
-                  $ReportPhoto.ScaleWidth(800)
-                  <% loop Result($ID) %>
-                      <div class="FinishingPosition">$FinishingPosition</div>
-                      <div class="driver">$Driver</div>
-                      <div class="LapTime">$LapTime</div>
-                  <% end_loop %>
-              </div>
-            <% end_loop %>
+              <% loop $RaceReport %>
+                <div id="$Race" class="tabcontent">
+                    <div class="race-name-date">Race - $Race $Name ($Date)</div>
+                    <div class="report-desc">$Description</div>
+                    $ReportPhoto.ScaleWidth(800)
+                    <% loop Result($ID) %>
+                        <div class="FinishingPosition">$FinishingPosition</div>
+                        <div class="driver">$Driver</div>
+                        <div class="LapTime">$LapTime</div>
+                    <% end_loop %>
+                </div>
+              <% end_loop %>
+            </div>
           <% end_if %>
-        
           <% if $ResultsGallary %>
             <div class="container">
               <div class="gallary-section">

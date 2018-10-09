@@ -5,7 +5,12 @@
         </div>
       <% end_if %>
     </div>
-    <h2>Event calendar for october 2018</h2>
+    <div class="canendar-wrap"> 
+	    <div class="calendar-title">
+			<h2>Event calendar for oct 2018</h2>
+		</div>
+	</div>
+
 	<% loop getEvents().GroupedBy(Year) %>
 		<% loop Children %>
 			<% include PurpleSpider/BasicCalendar/CalendarEntry %>
