@@ -84,10 +84,15 @@
       	<!-- Howtogetinvolved Section End -->
       
       	<!-- News section start -->
-          <div class="container">
-              <div>$NewsTitle</div>
-              <div>$NewsImage.ScaleWidth(800)</div>
+        <% if $NewsImage && $NewsTitle %>
+          <div class="news">
+            <div class="container">
+            <div class="news-title">$NewsTitle</div>        
+            <div class="news-image">$NewsImage.$ScaleWidth(800)</div>         
+              </div>
           </div>
+        <% end_if %>
+        <!-- News section End -->
       	<!-- News section End -->
       
 	    <!-- Gallary Section Start -->
