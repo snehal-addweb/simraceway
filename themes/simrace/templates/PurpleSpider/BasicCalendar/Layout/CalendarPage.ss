@@ -5,40 +5,19 @@
         </div>
       <% end_if %>
     </div>
-
-<% if ShowPast %>
-	<% if getEvents(past) %>
-		<p class="pastfuture"><a href="$Link">&raquo; View Upcoming Events</a></p>
-			<% loop getEvents(past).GroupedBy(Year) %>
-				<% loop Children %>
-					<% include PurpleSpider/BasicCalendar/CalendarEntry %>
-				<% end_loop %>
-			<% end_loop %>
-	<% else %>
-
-	<p><strong>There are no upcoming events.</strong></p>
-
-	<% end_if %>
-
-<% else %>
-
-	<% if getEvents(past) %><p class="pastfuture"><a href="$Link?past">&raquo; View Past Events</a></p><% end_if %>
-	
-	<% if getEvents(future) %>
-
-			<% loop getEvents(future).GroupedBy(Year) %>
-
-				<% loop Children %>
-					<% include PurpleSpider/BasicCalendar/CalendarEntry %>
-				<% end_loop %>
-
+    <h2>Event calendar for october 2018</h2>
+	<% loop getEvents().GroupedBy(Year) %>
+		<% loop Children %>
+			<% include PurpleSpider/BasicCalendar/CalendarEntry %>
 		<% end_loop %>
-
-
-	<% else %>
-
-	<p><strong>There are no upcoming events.</strong></p>
-
-	<% end_if %>
-
-<% end_if %>
+	<% end_loop %>
+	<div class="latest-video">
+	      <h1>Latest Video's</h1>
+	      <div class="image-wrap">
+	        <iframe width="300" height="300" src="https://www.youtube.com/embed/rvv8eITIiqA" frameborder="0" allow="autoplay"></iframe>
+	        <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+	        <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+	        <iframe width="300" height="300" src="https://www.youtube.com/embed/lz_IcktOR6U" frameborder="0" allow="autoplay"></iframe>
+	      </div>
+	      <button class="btn btn-plain">VIEW ALL MEDIA</button>
+    </div>

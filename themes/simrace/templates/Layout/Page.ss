@@ -15,18 +15,18 @@
     <!-- Home Section End -->
    
     <!-- Event Section Start -->
-      <% if $Event %>
+      <% if $Races %>
       <div class="racing-series-section">
         <h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
         <div class="container">
-          <% loop $Event %>
+          <% loop $Races %>
               <div class="item-event">
                 <div class="banner-caption upcomming-race">UPCOMMING</div>
-                  <div class="banner-caption month">$Date.Format('MMMM')</div>
-                  <div class="banner-caption date">$Date.Format('d') - $EndDate.Format('d')</div>
-                  <div class="banner-caption image">$Image</div>
+                  <div class="banner-caption month">$StartDate.Format('MMMM')</div>
+                  <div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
+                  <div class="banner-caption image"><img src="/sonama.png"></div>
                   <div class="banner-captionrace-no">Race $Race</div>
-                  <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $Time - $EndTime</div>
+                  <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartTime - $EndTime</div>
               </div>
             <% end_loop %>
           </div>
@@ -84,6 +84,15 @@
       	<!-- Howtogetinvolved Section End -->
       
       	<!-- News section start -->
+        <% if $NewsImage && $NewsTitle %>
+          <div class="news">
+            <div class="container">
+            <div class="news-title">$NewsTitle</div>        
+            <div class="news-image">$NewsImage.$ScaleWidth(800)</div>         
+              </div>
+          </div>
+        <% end_if %>
+        <!-- News section End -->
       	<!-- News section End -->
       
 	    <!-- Gallary Section Start -->
@@ -178,32 +187,60 @@
             </div>
           </div>
         <% end_if %>
-        <!-- Stanging and result page starts -->
-        
-        <% if Reports %>
-        	<% if $Photo %>
-		        <div class="homeimage">
-		          $Photo.$ScaleWidth(800)
-		        </div>
-      		<% end_if %>
-        	<div class="reports">
-        		<div class="container">
-		        	<% loop Reports %>
-		        		<div class="report-image">
-		        		<% loop $Photos %>
-		        			$ScaleWidth(800)
-		        		<% end_loop %></div>
-		        		<div class="reports-desc">$Description</div>
-		        	<% end_loop %>
-		        </div>
-	        </div>
-        <% end_if %>
-        
-        <!-- Stanging and result page End -->
+    <!-- End  Cars and classes Data -->
 
-      <!-- End  Cars and classes Data -->
+        <!-- Stanging and result page starts -->
+        <% if $ClassName == 'StandingAndResult\Component\StandingAndResult' %>
+          <div class="slider-section owl-carousel owl-theme">
+            <% if $Photo %>
+              <div class="homeimage">
+                $Photo.ScaleWidth(800)
+              </div>
+            <% end_if %>
+          </div>
+          <% if RaceReport %>
+            <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
+            <% loop $RaceReport %>
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
+              </div>
+            <% end_loop %>
+            <% loop $RaceReport %>
+              <div id="$Race" class="tabcontent">
+                  <div class="race-name-date">Race - $Race $Name ($Date)</div>
+                  <div class="report-desc">$Description</div>
+                  $ReportPhoto.ScaleWidth(800)
+                  <% loop Result($ID) %>
+                      <div class="FinishingPosition">$FinishingPosition</div>
+                      <div class="driver">$Driver</div>
+                      <div class="LapTime">$LapTime</div>
+                  <% end_loop %>
+              </div>
+            <% end_loop %>
+          <% end_if %>
+        
+          <% if $ResultsGallary %>
+            <div class="container">
+              <div class="gallary-section">
+                <h1>Gallary</h1>
+                <div class="image-wrap">
+                  <% loop $ResultsGallary %>
+                    $ScaleWidth(800)
+                  <% end_loop %>
+                </div>
+              </div>
+            </div>
+          <% end_if %>
+        
+        <% if $Content %>
+          <div class="content-upto-footer">$Content</div>
+        <% end_if %>
+      <% end_if %>
+        
+        <!-- Standing and result page End -->
+
        <!-- Video Section Start -->
-        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Home\Component\Home' %>
+        <% if $ClassName == 'Home\Component\Home' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
               <div class="image-wrap">

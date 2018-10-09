@@ -41,9 +41,7 @@
     },
     "config": {
         "process-timeout": 600,
-        "platform": {
-
-        }
+        "platform": {}
     },
     "prefer-stable": true,
     "minimum-stability": "dev"

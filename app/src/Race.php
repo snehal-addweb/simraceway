@@ -4,18 +4,16 @@ namespace StandingAndResult\Component;
 use Page;
 use SilverStripe\Assets\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-use SilverStripe\Assets\File;
 use Colymba\BulkManager\BulkManager;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TimeField;
-use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\ButtonField;
 use SilverStripe\Forms\NumericField;
+use SilverStripe\Forms\DatetimeField;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataObject;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use SilverStripe\Forms\GridField\GridFieldButtonRow;
@@ -37,7 +35,6 @@ use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
 use SilverStripe\ORM\DB;
 use SilverStripe\UserForms\Extension\UserFormFieldEditorExtension;
 use SilverStripe\UserForms\Extension\UserFormValidator;
@@ -53,36 +50,48 @@ use SilverStripe\Security\PermissionProvider;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
-use SilverStripe\CMS\Model\SiteTree;
-use PageController;
 
-class StandingAndResult extends Page
+class Race extends Page
 {
-    private static $has_one = [
-        'Photo' => Image::class,
-    ];  
-    private static $many_many = [
-        'ResultsGallary' => Image::class,
+    private static $db = [
+      "StartDate" => "Date",
+      "EndDate" => "Date",
+      "StartTime" => "Text",
+      "EndTime" => "Text",
+      "Race" => "Text",
+      "Name" => "Text",
     ];
-    private static $owns = [
-        'Photo',
-        'ResultsGallary'
-    ];
-    public function getCMSFields()
-    {                                                               
-        $fields = parent::getCMSFields();
-        $fields->addFieldToTab('Root.Main', UploadField::create('Photo'));
-        $fields->addFieldToTab('Root.Gallary', UploadField::create('ResultsGallary'));
-        return $fields;
-    }
-    public function getRaceReport()
-    {
-        return RaceReport::get();
-    }
 
-    public function getResult($ID)
+    private static $can_be_root = false;
+
+    private static $table_name = 'Race';
+
+    
+    private static $has_one = [
+        'Photos' => Image::class,
+    ];  
+
+    private static $owns = [
+        'Photos'
+    ];
+
+    public function getCMSFields()
     {
-        $Pageids = SiteTree::get()->find('ParentID',$ID);
-        return Result::get()->byIDs($Pageids);
+        Requirements::css('silverstripe/userforms:client/dist/styles/userforms-cms.css');
+
+        $this->beforeUpdateCMSFields(function ($fields) {
+            $fields->addFieldToTab('Root.Race',new TextField('Name','Race Name'));
+            $fields->addFieldToTab('Root.Race',new TextField('Race','Race number'));
+            $fields->addFieldToTab('Root.Race',new DateField('StartDate','Start Date'));
+            $fields->addFieldToTab('Root.Race',new DateField('EndDate','End Date'));
+            $fields->addFieldToTab('Root.Race',new TextField('StartTime','Start Time'));
+            $fields->addFieldToTab('Root.Race',new TextField('EndTime','End Time'));
+            $fields->addFieldToTab('Root.Race',new UploadField('Photos'));
+        });
+
+        $fields = parent::getCMSFields();
+
+
+        return $fields;
     }
 }

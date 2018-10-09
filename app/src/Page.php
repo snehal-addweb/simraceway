@@ -9,9 +9,6 @@ namespace {
         private static $db = [];
 
         private static $has_one = [];
-
-        public function getEvent() {
-        	return AddEvent::get();
-    	}
+        
     }
 }
