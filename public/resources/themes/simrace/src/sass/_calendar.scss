@@ -9,63 +9,64 @@
       text-align: center;
     }
   }
-  .calendar {
-    margin-top: 12px;
-    padding: 50px;
-    @include css3-prefix (box-shadow, 0 3px 45px 3px #F2F2F2);
-    @media only screen and (max-width: 580px) {
-      padding: 15px;
-    }
-    .fc-toolbar {
-      float: unset;
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 30px;
-      .fc-center {
-        display: block;
+}
+.calendar {
+  margin-top: 12px;
+  padding: 50px;
+  @include css3-prefix (box-shadow, 0 3px 45px 3px #F2F2F2);
+  @media only screen and (max-width: 580px) {
+    padding: 15px;
+  }
+  .fc-toolbar {
+    float: unset;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    .fc-center {
+      display: block;
 
-        h2 {
-          float: none;
-          display: inline-block;
-          color: $square-dark;
-          font-size: 24px;
-          font-weight: bold;
-          margin: 0;
-        }
-        .fc-prev-button {
-          float: left;
-          border-radius: unset;
-        }
-        .fc-next-button {
-          float: right;
-          border-radius: unset;
-        }
+      h2 {
+        float: none;
+        display: inline-block;
+        margin: 0;
+        color: $square-dark;
+        font-size: 24px;
+        font-weight: bold;
       }
-      button {
-        background-color: $square-dark;
-        background-image: none;
+      .fc-prev-button {
+        float: left;
+        border-radius: unset;
+      }
+      .fc-next-button {
+        float: right;
+        border-radius: unset;
       }
     }
-    thead {
-      th {
-        padding: 5px;
-        background-color: $grey-light;
-      }
-      .fc-sun {
-        color: $red;
-        font-size: 16px;
-      }
-    }
-    .fc-title {
-      font-size: 16px;
-      @media only screen and (max-width: 580px) {
-        font-size: 14px;
-      }
-    }
-    .fc-event {
-      padding: 5px;
-      background-color: #B2181B;
-      color: $white;
+    button {
+      background-color: $square-dark;
+      background-image: none;
     }
   }
+  thead {
+    th {
+      padding: 5px;
+      background-color: $grey-light;
+    }
+    .fc-sun {
+      color: $red;
+      font-size: 16px;
+    }
+  }
+  .fc-title {
+    font-size: 16px;
+    @media only screen and (max-width: 580px) {
+      font-size: 14px;
+    }
+  }
+  .fc-event {
+    padding: 5px;
+    background-color: #B2181B;
+    color: $white;
+  }
 }
+
