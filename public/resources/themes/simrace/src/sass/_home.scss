@@ -34,7 +34,6 @@
 }
 /* End of slant shape */
 
-
 /* slant shape image*/
 .left-right-image {
   img {
@@ -74,6 +73,7 @@
     img {
       display: inline-block;
       width: 100%;
+      height: 900px;
     }
     &::after {
       position: absolute;
@@ -89,7 +89,7 @@
   }
   .owl-dots {
     position: absolute;
-    bottom: 300px;
+    bottom: 130px;
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -143,6 +143,19 @@
   width: 100%;
   padding: 70px;
   padding-bottom: 50px;
+  h1 {
+    display: flex;
+    max-width: 699px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 40px;
+    border-bottom: none;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .item-event {
     float: left;
     display: inline-block;
@@ -173,11 +186,13 @@
       .date {
         color: $primary-color;
       }
-      .time {
-        color: rgba($base-color, .5);
-      }
       .image {
         margin: 10px 0;
+      }
+      .banner-captionrace-no {
+        color: $black;
+        font-size: 16px;
+        font-weight: bold;
       }
     }
     .upcomming-race {
@@ -194,11 +209,26 @@
     .time,
     .race-no {
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 700;
     }
     .date {
-      font-size: 28px;
+      font-size: 38px;
       font-weight: 900;
+    }
+    .time {
+      opacity: .9;
+      padding: 10px 0;
+    }
+    .time:hover {
+      opacity: .3;
+    }
+    .image {
+      padding: 10px 0;
+      img {
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        padding: 10px;
+      }
     }
   }
 }
