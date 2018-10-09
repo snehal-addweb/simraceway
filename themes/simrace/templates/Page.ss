@@ -88,6 +88,8 @@ Change it, enhance it and most importantly enjoy it!
 <% require themedJavascript('moment') %>
 <% require themedJavascript('jquery-ui.min') %>
 <% require themedJavascript('fullcalendar') %>
+<% require themedJavascript('infiniteslidev2') %>
+<% require themedJavascript('theme') %>
 <script type="text/javascript">
 	function openCity(evt, cityName) {
 	    var i, tabcontent, tablinks;
