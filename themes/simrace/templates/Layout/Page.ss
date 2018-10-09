@@ -84,6 +84,10 @@
       	<!-- Howtogetinvolved Section End -->
       
       	<!-- News section start -->
+          <div class="container">
+              <div>$NewsTitle</div>
+              <div>$NewsImage.ScaleWidth(800)</div>
+          </div>
       	<!-- News section End -->
       
 	    <!-- Gallary Section Start -->
@@ -201,12 +205,28 @@
             </div>
           <% end_loop %>
         <% end_if %>
-
+        <% if $ClassName == 'StandingAndResult\Component\StandingAndResult' %>
+          <% if $ResultsGallary %>
+            <div class="container">
+              <div class="gallary-section">
+                <h1>Gallary</h1>
+                <div class="image-wrap">
+                  <% loop $ResultsGallary %>
+                    $ScaleWidth(800)
+                  <% end_loop %>
+                </div>
+              </div>
+            </div>
+          <% end_if %>
+        <% end_if %>
+        <% if $Content %>
+          <div class="content-upto-footer">$Content</div>
+        <% end_if %>
         
         <!-- Standing and result page End -->
 
        <!-- Video Section Start -->
-        <% if $ClassName == 'Calendar\Component\Calendar' || $ClassName == 'Home\Component\Home' %>
+        <% if $ClassName == 'Home\Component\Home' %>
             <div class="latest-video">
               <h1>Latest Video's</h1>
               <div class="image-wrap">

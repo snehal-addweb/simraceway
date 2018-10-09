@@ -61,15 +61,18 @@ class StandingAndResult extends Page
     private static $has_one = [
         'Photo' => Image::class,
     ];  
-    //...
+    private static $many_many = [
+        'ResultsGallary' => Image::class,
+    ];
     private static $owns = [
-        'Photo'
+        'Photo',
+        'ResultsGallary'
     ];
     public function getCMSFields()
     {                                                               
         $fields = parent::getCMSFields();
-        $fields->removeFieldFromTab('Root.Main',"Content");
         $fields->addFieldToTab('Root.Main', UploadField::create('Photo'));
+        $fields->addFieldToTab('Root.Gallary', UploadField::create('ResultsGallary'));
         return $fields;
     }
     public function getRaceReport()

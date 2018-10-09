@@ -1,5 +1,5 @@
 <div class="container">
-			<h2>Event calendar for ...... 2018</h2>
+			
 	<div class="calendar">
 		<div class="calendarentry clearfix">
 			<a name="$ID"></a>
