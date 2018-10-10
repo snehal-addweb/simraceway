@@ -133,7 +133,7 @@
           padding: 20px;
         }
       }
-      #thumbs1 {
+      [id^=thumbs-] {
         margin-top: -170px;
         .item-ul {
           .owl-stage {
@@ -154,7 +154,7 @@
           }
         }
       }
-      #big1 {
+      [id^=big-] {
         .item-li {
           img {
             height: 451px;
@@ -178,7 +178,7 @@
         }
       }
 
-      #thumbs1 {
+      [id^=thumbs-] {
         list-style-type: none;
       }
     }

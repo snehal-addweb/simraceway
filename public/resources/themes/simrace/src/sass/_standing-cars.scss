@@ -33,6 +33,12 @@
     .report-desc {
       font-size: 16px;
     }
+    .title {
+      padding: 10px;
+      background-color: $grey-light;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
   }
   .standing-content {
     .content-upto-footer {
@@ -42,12 +48,5 @@
         }
       }
     }
-  }
-
-.title {
-    padding: 10px;
-    background-color: red;
-    font-weight: 700;
-    letter-spacing: 2px;
   }
 }

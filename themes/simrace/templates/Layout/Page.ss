@@ -84,16 +84,22 @@
       	<!-- Howtogetinvolved Section End -->
       
       	<!-- News section start -->
-        <% if $NewsImage && $NewsTitle %>
-          <div class="bg-img">
+
+      <% if $NewsImage && $NewsTitle %>
+         <div class="bg-img">
             <div class="news">
-              <div class="news-title">$NewsTitle</div>        
+              <div class="news-btn-ttl-wrap">
+                <div class="news-title">$NewsTitle</div> 
+                <div class="news-btn-wrap">
+                  <button class="news-download">Download (PDF)</button>       
+                  <button class="news-view-races">VIEW RACES</button>
+                </div> 
+              </div>      
               <div class="news-image">$NewsImage.$ScaleWidth(800)</div> 
             </div>
           </div>
         <% end_if %>
         <!-- News section End -->
-      	<!-- News section End -->
       
 	    <!-- Gallary Section Start -->
 	        
@@ -144,8 +150,8 @@
             </div>
             <div class="f-row">
               <% loop $AddCarsAndClasses %>
-                <div class="car-wrap">
-                  <div class="container slider">
+                <div class="car-wrap" >
+                  <div class="container slider" id="big">
                     <div class="car-left">
                       <h1>$Name</h1>
                         <div class="cars-desc">$Description</div>

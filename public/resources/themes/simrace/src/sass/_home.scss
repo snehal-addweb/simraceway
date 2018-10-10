@@ -460,12 +460,21 @@
 .news {
   display: inline-block;
   width: 100%;
-  .news-title {
+  .news-btn-ttl-wrap {
     position: absolute;
-    max-width: 1005px;
     padding: 15px;
+  }
+  .news-title {
+    max-width: 1005px;
     font-size: 36px;
     font-weight: bold;
+  }
+  .news-btn-wrap {
+    margin: 15px 0;
+    .news-download {
+      background-color: $red;
+      padding: 10px;
+    }
   }
   .news-image {
     img {
