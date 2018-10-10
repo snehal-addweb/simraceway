@@ -5,11 +5,11 @@
     }
     .tab-scoll {
       .tablinks {
-        font-size: 16px;
         padding: 10px;
+        border-color: $white;
         background-color: $white;
         background-image: none;
-        border-color: $white;
+        font-size: 16px;
       }
       .tablinks:hover {
         background-color: $red;
@@ -22,6 +22,7 @@
       .table-wrap {
         display: inline-block;
         width: 100%;
+        padding: 15px;
       }
     }
     .race-name-date {
@@ -41,5 +42,12 @@
         }
       }
     }
+  }
+
+.title {
+    padding: 10px;
+    background-color: red;
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 }

@@ -144,7 +144,7 @@
             </div>
             <div class="f-row">
               <% loop $AddCarsAndClasses %>
-                <div class="car-wrap" id="big">
+                <div class="car-wrap">
                   <div class="container slider">
                     <div class="car-left">
                       <h1>$Name</h1>
@@ -166,14 +166,14 @@
                       </div>
                     </div>
                     <div class="car-right">
-                      <div id="big1" class="photo-wrap owl-carousel owl-theme owl-loaded">
+                      <div id="big-$ID" class="photo-wrap owl-carousel owl-theme owl-loaded">
                         <ul class="item-ul">
                           <% loop $Photo %>
                             <li class="item-li right-left-slant">$ScaleWidth(800)</li>
                           <% end_loop %>
                         </ul>
                       </div>
-                      <div id="thumbs1" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
+                      <div id="thumbs-$ID" class="photo-wrap-small owl-carousel owl-theme owl-loaded">
                         <ul class="item-ul">
                           <% loop $Photo %>
                             <li class="item-li ">$ScaleWidth(800)</li>
@@ -211,16 +211,25 @@
                     <% end_loop %>
                   </div>
                   <% loop $RaceReport %>
-                    <data></data>iv id="$Race" class="tabcontent">
+                    <div id="$Race" class="tabcontent">
                         <div class="race-name-date">Race - $Race $Name ($Date)</div>
                         <div class="report-desc">$Description</div>
                         $ReportPhoto.ScaleWidth(800)
-                        <div class="table-wrap">
-                          <% loop Result($ID) %>
-                              <div class="FinishingPosition">$FinishingPosition</div>
-                              <div class="driver">$Driver</div>
-                              <div class="LapTime">$LapTime</div>
-                          <% end_loop %>
+                        <div class="table-wrap responsive-table">
+                          <table class="table">
+                            <th>
+                              <td class="title">Finish postion</td>
+                              <td class="title">Driver</td>
+                              <td class="title">Qualifing lap time</td>
+                            </th>
+                            <% loop Result($ID) %>
+                            <tr>
+                              <td><div class="FinishingPosition">$FinishingPosition</div></td>
+                              <td><div class="driver">$Driver</div></td>
+                              <td><div class="LapTime">$LapTime</div></td>
+                            </tr>
+                            <% end_loop %>
+                          </table>
                         </div>
                     </div>
                   <% end_loop %>
