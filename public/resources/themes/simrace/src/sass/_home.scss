@@ -383,6 +383,9 @@
       }
     }
   }
+  &.new-bg-img {
+    background-position: right 0 top;
+  }
 }
 /* End of Our Client section */
 
@@ -458,10 +461,14 @@
 
 /* news */
 .news {
+  position: relative;
   display: inline-block;
   width: 100%;
   .news-btn-ttl-wrap {
     position: absolute;
+    width: 100%;
+    top: 20px;
+    z-index: 1;
     padding: 15px;
   }
   .news-title {
@@ -471,9 +478,8 @@
   }
   .news-btn-wrap {
     margin: 15px 0;
-    .news-download {
-      background-color: $red;
-      padding: 10px;
+    .btn {
+      margin-right: 15px;
     }
   }
   .news-image {

@@ -8,6 +8,11 @@
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $white;
+    opacity: .8;
+  }
 }
 .btn-plain {
   border-color: $primary-color;
@@ -27,6 +32,10 @@
   border-color: $white;
   background-color: $white;
   color: $primary-color;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
 }
 
 

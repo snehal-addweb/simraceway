@@ -86,14 +86,16 @@
       	<!-- News section start -->
 
       <% if $NewsImage && $NewsTitle %>
-         <div class="bg-img">
+         <div class="bg-img new-bg-img">
             <div class="news">
               <div class="news-btn-ttl-wrap">
-                <div class="news-title">$NewsTitle</div> 
-                <div class="news-btn-wrap">
-                  <button class="news-download">Download (PDF)</button>       
-                  <button class="news-view-races">VIEW RACES</button>
-                </div> 
+                <div class="container">
+                  <div class="news-title">$NewsTitle</div> 
+                  <div class="news-btn-wrap">
+                    <button class="news-download btn">Download (PDF)</button>       
+                    <button class="news-view-races btn-white btn">VIEW RACES</button>
+                  </div>
+                </div>
               </div>      
               <div class="news-image">$NewsImage.$ScaleWidth(800)</div> 
             </div>
@@ -223,18 +225,22 @@
                         $ReportPhoto.ScaleWidth(800)
                         <div class="table-wrap responsive-table">
                           <table class="table table-bordered">
-                            <th>
-                              <td class="title">Finish postion</td>
-                              <td class="title">Driver</td>
-                              <td class="title">Qualifing lap time</td>
-                            </th>
-                            <% loop Result($ID) %>
-                            <tr>
-                              <td><div class="FinishingPosition">$FinishingPosition</div></td>
-                              <td><div class="driver">$Driver</div></td>
-                              <td><div class="LapTime">$LapTime</div></td>
-                            </tr>
-                            <% end_loop %>
+                            <thead>
+                              <tr>
+                                <td class="title">Finish postion</td>
+                                <td class="title">Driver</td>
+                                <td class="title">Qualifing lap time</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <% loop Result($ID) %>
+                              <tr>
+                                <td><div class="FinishingPosition">$FinishingPosition</div></td>
+                                <td><div class="driver">$Driver</div></td>
+                                <td><div class="LapTime">$LapTime</div></td>
+                              </tr>
+                              <% end_loop %>
+                            </tbody>
                           </table>
                         </div>
                     </div>
