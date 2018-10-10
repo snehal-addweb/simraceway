@@ -16,6 +16,16 @@
 			<% include PurpleSpider/BasicCalendar/CalendarEntry %>
 		<% end_loop %>
 	<% end_loop %>
+
+	<div class="container">
+		<div class="calendar">
+			<div class="calendarentry clearfix">
+				<div class="hr"></div>
+					<div id="bootstrapModalFullCalendar"></div>
+			</div>
+		</div>
+	</div>
+
 	<div class="latest-video">
 	      <h1>Latest Video's</h1>
 	      <div class="image-wrap">
