@@ -1,0 +1,45 @@
+.standing-cars {
+  .report {
+    .infiniteslide_wrap {
+
+    }
+    .tab-scoll {
+      .tablinks {
+        font-size: 16px;
+        padding: 10px;
+        background-color: $white;
+        background-image: none;
+        border-color: $white;
+      }
+      .tablinks:hover {
+        background-color: $red;
+        color: $white;
+        font-weight: 700;
+      }
+    }
+    .tabcontent {
+      padding: 15px;
+      .table-wrap {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .race-name-date {
+      padding: 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .report-desc {
+      font-size: 16px;
+    }
+  }
+  .standing-content {
+    .content-upto-footer {
+      p {
+        span {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

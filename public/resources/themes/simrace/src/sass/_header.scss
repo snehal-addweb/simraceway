@@ -51,11 +51,10 @@ header {
             content: '';
           }
         }
-        &:nth-last-child(-n + 2) {
+        /*&:nth-last-child(-n + 2) {
           top: 0;
           padding: 28px 0;
           background-color: $white;
-          /*box-shadow: 0 0 5px $box-shadow-header;*/
           a {
             color: $primary-color;
             font-weight: bold;
@@ -69,7 +68,7 @@ header {
             top: 0;
             padding: 0;
           }
-        }
+        }*/
       }
     }
   }

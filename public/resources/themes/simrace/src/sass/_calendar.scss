@@ -29,7 +29,7 @@
         float: none;
         display: inline-block;
         margin: 0;
-        color: $square-dark;
+        color: #B2181B;
         font-size: 24px;
         font-weight: bold;
       }
@@ -43,8 +43,11 @@
       }
     }
     button {
-      background-color: $square-dark;
+      background-color: #B2181B;
       background-image: none;
+      span {
+        color: $white;
+      }
     }
   }
   thead {

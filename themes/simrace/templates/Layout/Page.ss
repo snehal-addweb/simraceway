@@ -18,7 +18,7 @@
       <% if $Races %>
       <div class="racing-series-section">
         <h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
-        <div class="container">
+        <div class="container race">
           <% loop $Races %>
               <div class="item-event">
                 <div class="banner-caption upcomming-race">UPCOMMING</div>
@@ -190,58 +190,66 @@
     <!-- End  Cars and classes Data -->
 
         <!-- Stanging and result page starts -->
-        <% if $ClassName == 'StandingAndResult\Component\StandingAndResult' %>
-          <div class="slider-section owl-carousel owl-theme">
-            <% if $Photo %>
-              <div class="homeimage">
-                $Photo.ScaleWidth(800)
-              </div>
-            <% end_if %>
-          </div>
-          <% if RaceReport %>
-            <div class="container">
-              <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
-              <div class="tab-scoll">
-                <% loop $RaceReport %>
-                  <div class="tab">
-                    <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
-                  </div>
-                <% end_loop %>
-              </div>
-              <% loop $RaceReport %>
-                <div id="$Race" class="tabcontent">
-                    <div class="race-name-date">Race - $Race $Name ($Date)</div>
-                    <div class="report-desc">$Description</div>
-                    $ReportPhoto.ScaleWidth(800)
-                    <% loop Result($ID) %>
-                        <div class="FinishingPosition">$FinishingPosition</div>
-                        <div class="driver">$Driver</div>
-                        <div class="LapTime">$LapTime</div>
-                    <% end_loop %>
+        <div class="standing-cars">
+          <% if $ClassName == 'StandingAndResult\Component\StandingAndResult' %>
+            <div class="slider-section owl-carousel owl-theme">
+              <% if $Photo %>
+                <div class="homeimage">
+                  $Photo.ScaleWidth(800)
                 </div>
-              <% end_loop %>
+              <% end_if %>
             </div>
-          <% end_if %>
-          <% if $ResultsGallary %>
-            <div class="container">
-              <div class="gallary-section">
-                <h1>Gallary</h1>
-                <div class="image-wrap">
-                  <% loop $ResultsGallary %>
-                    $ScaleWidth(800)
+            <div class="report">
+              <% if RaceReport %>
+                <div class="container">
+                  <h1>Simraceway F3 Summer Racing Series, Race Reports</h1>
+                  <div class="tab-scoll">
+                    <% loop $RaceReport %>
+                      <div class="tab">
+                        <button class="tablinks" onclick="openCity(event,$Race)">Race$Race - $Date.Format('MMMM') $Date.Format('d')</button>
+                      </div>
+                    <% end_loop %>
+                  </div>
+                  <% loop $RaceReport %>
+                    <data></data>iv id="$Race" class="tabcontent">
+                        <div class="race-name-date">Race - $Race $Name ($Date)</div>
+                        <div class="report-desc">$Description</div>
+                        $ReportPhoto.ScaleWidth(800)
+                        <div class="table-wrap">
+                          <% loop Result($ID) %>
+                              <div class="FinishingPosition">$FinishingPosition</div>
+                              <div class="driver">$Driver</div>
+                              <div class="LapTime">$LapTime</div>
+                          <% end_loop %>
+                        </div>
+                    </div>
                   <% end_loop %>
                 </div>
-              </div>
+              <% end_if %>
             </div>
-          <% end_if %>
-        <div class="standing-content">
-          <div class="container">
-            <% if $Content %>
-              <div class="content-upto-footer">$Content</div>
-            <% end_if %>
+            <div class="Gallary">
+              <% if $ResultsGallary %>
+                <div class="container">
+                  <div class="gallary-section">
+                    <h1>Gallary</h1>
+                    <div class="image-wrap">
+                      <% loop $ResultsGallary %>
+                        $ScaleWidth(800)
+                      <% end_loop %>
+                    </div>
+                  </div>
+                </div>
+              <% end_if %>
+            </div>
+          <div class="standing-content">
+            <div class="container">
+              <% if $Content %>
+                <div class="content-upto-footer">$Content</div>
+              <% end_if %>
+            </div>
           </div>
+        <% end_if %>
         </div>
-      <% end_if %>
         
         <!-- Standing and result page End -->
 
