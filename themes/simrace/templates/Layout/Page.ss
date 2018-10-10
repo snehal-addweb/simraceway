@@ -151,7 +151,7 @@
             <div class="f-row">
               <% loop $AddCarsAndClasses %>
                 <div class="car-wrap" >
-                  <div class="container slider" id="big">
+                  <div class="container slider">
                     <div class="car-left">
                       <h1>$Name</h1>
                         <div class="cars-desc">$Description</div>
@@ -222,7 +222,7 @@
                         <div class="report-desc">$Description</div>
                         $ReportPhoto.ScaleWidth(800)
                         <div class="table-wrap responsive-table">
-                          <table class="table">
+                          <table class="table table-bordered">
                             <th>
                               <td class="title">Finish postion</td>
                               <td class="title">Driver</td>
