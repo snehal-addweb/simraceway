@@ -301,7 +301,7 @@
   }
   &.bg-img {
     padding: 75px 0;
-    background-position: right 141px top 76px;
+    background-position: right 297px top 59px;
     background-size: 300px 250px;
     @media only screen and (max-width: 1300px) {
       background-position: right 24px top 76px;
@@ -310,11 +310,11 @@
       background-size: 240px 206px;
     }
   }
-  &.bg-square {
+  /*&.bg-square {
     background-image: url('../images/square.png');
     background-position: right 141px bottom 76px;
     background-size: 250px 200px;
-  }
+  }*/
 }
 
 /* End of About car section */
@@ -382,6 +382,9 @@
         }
       }
     }
+  }
+  &.new-bg-img {
+    background-position: right 0 top;
   }
 }
 /* End of Our Client section */
@@ -458,14 +461,26 @@
 
 /* news */
 .news {
+  position: relative;
   display: inline-block;
   width: 100%;
-  .news-title {
+  .news-btn-ttl-wrap {
     position: absolute;
-    max-width: 1005px;
+    width: 100%;
+    top: 20px;
+    z-index: 1;
     padding: 15px;
+  }
+  .news-title {
+    max-width: 1005px;
     font-size: 36px;
     font-weight: bold;
+  }
+  .news-btn-wrap {
+    margin: 15px 0;
+    .btn {
+      margin-right: 15px;
+    }
   }
   .news-image {
     img {
