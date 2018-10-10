@@ -234,10 +234,13 @@
               </div>
             </div>
           <% end_if %>
-        
-        <% if $Content %>
-          <div class="content-upto-footer">$Content</div>
-        <% end_if %>
+        <div class="standing-content">
+          <div class="container">
+            <% if $Content %>
+              <div class="content-upto-footer">$Content</div>
+            <% end_if %>
+          </div>
+        </div>
       <% end_if %>
         
         <!-- Standing and result page End -->
