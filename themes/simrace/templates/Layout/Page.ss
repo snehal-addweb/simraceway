@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row about-wrap">
               <div class="col-md-6 img-overlap">
-                <div class=" about-image left-right-image">
+                <div class=" about-image left-right-slant">
                   $About
                 </div>
               </div>
@@ -79,7 +79,7 @@
                 <% end_loop %>
               </div>
             </div>
-            </div>
+          </div>
       	<% end_if %>
       	<!-- Howtogetinvolved Section End -->
       

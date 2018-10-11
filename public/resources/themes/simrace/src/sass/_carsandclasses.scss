@@ -157,9 +157,9 @@
       [id^=big-] {
         .item-li {
           img {
+            /*max-height: 451px;*/
             height: 451px;
-            /*width: 675px;*/
-            width: 540px;
+            max-width: 540px;
             @media only screen and (max-width: 992px) {
               width: 100%;
             }
@@ -169,38 +169,51 @@
             display: table-cell;
             height: 50%;
           }
-          :nth-child(2n) {
-            &.right-left-slant {
-              top: -70px;
-              height: 50%;
-            }
-          }
-        }
-      }
-
-      [id^=thumbs-] {
-        list-style-type: none;
-      }
-    }
-  }
-  .car-wrap:nth-child(2n) {
-    background-color: $grey-light;
-    .car-right {
-      .photo-wrap {
-        .active {
-          .right-left-slant::before {
-            background-color: $grey-light;
-          }
         }
       }
     }
-    .slider {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
+    [id^=thumbs-] {
+      list-style-type: none;
     }
   }
 }
+.car-wrap:nth-child(2n) {
+  background-color: $grey-light;
+  .car-right {
+    .item-ul {
+      margin-bottom: 25px;
+    }
+    .photo-wrap {
+      .right-left-slant {
+        @extend .left-right-slant;
+        &::before {
+          top: 36px;
+          right: -35px;
+          left: 0;
+          display: inline-block;
+          height: 20%;
+          background: inherit;
+          background-color: $grey-light;
+        }
+        img {
+          margin-left: 0;
+        }
+      }
+      @media only screen and (max-width: 1200px) {
+        .right-left-slant::before {
+          top: 44px;
+          height: 17%;
+        }
+      }
+    }
+  }
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+}
+
 
 .outer {
   max-width: 800px;
@@ -273,3 +286,25 @@
 #thumbs.owl-theme .owl-prev {
   background: #333;
 }
+
+/*
+.car-right {
+  .left-right-image {
+    img {
+      margin-left: 0;
+    }
+  }
+  :before {
+    top: -42px;
+    right: -35px;
+    left: -5px;
+    display: inline-block;
+    height: 30%;
+    background: inherit;
+    background-color: #F2F2F2;
+  }
+}
+.cars-classes .car-wrap .car-right [id^=thumbs-] {
+  margin-top: -95px;
+}
+*/
