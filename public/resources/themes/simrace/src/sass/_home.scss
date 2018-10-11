@@ -68,14 +68,13 @@
     }
   }
 }
-
 /* End of banner sction */
 
 /* racing-series section */
 .racing-series-section {
   display: inline-block;
   width: 100%;
-  padding: 30px 70px 80px;
+  padding: 30px 0 80px;
   @media only screen and (max-width: 992px) {
     padding: 30px 0;
   }
@@ -175,7 +174,6 @@
     }
   }
 }
-
 /* End of racing-series section */
 
 /* About car section */
@@ -286,7 +284,7 @@
         display: inline-block;
         max-width: 140px;
         width: calc(100% - 25px);
-        margin-right: 50px;
+        margin-right: 40px;
         &:last-child {
           margin-right: 0;
         }
@@ -440,6 +438,11 @@
 
 .latest-video {
   text-align: center;
+  h1 {
+    @media only screen and (max-width: 520px) {
+    padding-bottom: 0;
+}
+  }
   .image-wrap {
     display: flex;
     width: 100%;

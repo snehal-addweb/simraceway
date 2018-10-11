@@ -75,7 +75,7 @@
               width: 30%;
               font-size: 16px;
             }
-            @media only screen and (max-width: 420px) {
+            @media only screen and (max-width: 42 0px) {
               width: 40%;
             }
           }
@@ -160,10 +160,10 @@
             }
           }
         }
-        :nth-child(2n) {
-          @media only screen and (max-width: 992px) {
-          margin-top: -290px;
-        }
+          :nth-child(2n) {
+            @media only screen and (max-width: 992px) {
+            margin-top: -290px;
+          }
         }
       }
       [id^=big-] {
@@ -189,6 +189,13 @@
       list-style-type: none;
     }
   }
+/*  .latest-video {
+    .image-wrap {
+      iframe {
+        margin-right: 90px;
+      }
+    }
+  }*/
 }
 .car-wrap:nth-child(2n) {
   background-color: $grey-light;
@@ -307,25 +314,3 @@
 #thumbs.owl-theme .owl-prev {
   background: #333;
 }
-
-/*
-.car-right {
-  .left-right-image {
-    img {
-      margin-left: 0;
-    }
-  }
-  :before {
-    top: -42px;
-    right: -35px;
-    left: -5px;
-    display: inline-block;
-    height: 30%;
-    background: inherit;
-    background-color: #F2F2F2;
-  }
-}
-.cars-classes .car-wrap .car-right [id^=thumbs-] {
-  margin-top: -95px;
-}
-*/
