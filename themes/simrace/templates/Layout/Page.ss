@@ -15,16 +15,19 @@
     <!-- Home Section End -->
    
     <!-- Event Section Start -->
+
       <% if $Races %>
       <div class="racing-series-section">
         <h1>Simraceway formula 3 Summer Racing Series, 2018 Schedule</h1>
         <div class="container race">
           <% loop $Races %>
               <div class="item-event">
-                <div class="banner-caption upcomming-race">UPCOMMING</div>
+                  <% if  $IsDateOk($StartDate) %>
+                    <div class="banner-caption upcomming-race">UPCOMMING</div>
+                  <% end_if %>
                   <div class="banner-caption month">$StartDate.Format('MMMM')</div>
                   <div class="banner-caption date">$StartDate.Format('d') - $EndDate.Format('d')</div>
-                  <div class="banner-caption image"><img src="/sonama.png"></div>
+                  <div class="banner-caption image">$Photos.ScaleWidth(800)</div>
                   <div class="banner-captionrace-no">Race $Race</div>
                   <div class="banner-caption time"><span class="glyphicon glyphicon-time"></span> $StartTime - $EndTime</div>
               </div>

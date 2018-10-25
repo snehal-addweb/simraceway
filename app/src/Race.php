@@ -94,4 +94,10 @@ class Race extends Page
 
         return $fields;
     }
+    
+    public function IsDateOk($StartDate)
+    {
+        $today = date("Y-m-d");
+        return (strtotime($StartDate) > strtotime($today));
+    }
 }
