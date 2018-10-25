@@ -71,6 +71,13 @@
             width: 20%;
             font-size: 18px;
             font-weight: bold;
+            @media only screen and (max-width: 520px) {
+              width: 30%;
+              font-size: 16px;
+            }
+            @media only screen and (max-width: 42 0px) {
+              width: 40%;
+            }
           }
           .classes-value {
             display: inline-block;
@@ -153,15 +160,21 @@
             }
           }
         }
+          :nth-child(2n) {
+            @media only screen and (max-width: 992px) {
+            margin-top: -290px;
+          }
+        }
       }
       [id^=big-] {
         .item-li {
           img {
+            /*max-height: 451px;*/
             height: 451px;
-            /*width: 675px;*/
-            width: 540px;
+            max-width: 540px;
             @media only screen and (max-width: 992px) {
-              width: 100%;
+              height: auto;
+              max-width: unset;
             }
           }
           &.right-left-slant {
@@ -169,38 +182,66 @@
             display: table-cell;
             height: 50%;
           }
-          :nth-child(2n) {
-            &.right-left-slant {
-              top: -70px;
-              height: 50%;
-            }
+        }
+      }
+    }
+    [id^=thumbs-] {
+      list-style-type: none;
+    }
+  }
+/*  .latest-video {
+    .image-wrap {
+      iframe {
+        margin-right: 90px;
+      }
+    }
+  }*/
+}
+.car-wrap:nth-child(2n) {
+  background-color: $grey-light;
+  .car-right {
+    .item-ul {
+      margin-bottom: 25px;
+    }
+    .photo-wrap {
+      .right-left-slant {
+        @extend .left-right-slant;
+        &::before {
+          top: 36px;
+          right: -35px;
+          left: 0;
+          display: inline-block;
+          height: 20%;
+          background: inherit;
+          background-color: $grey-light;
+        }
+        img {
+          margin-left: 0;
+          @media only screen and (max-width: 1200px) {
+            margin-bottom: 0;
           }
         }
       }
-
-      [id^=thumbs-] {
-        list-style-type: none;
+      @media only screen and (max-width: 1200px) {
+        .right-left-slant::before {
+          top: 44px;
+          height: 17%;
+        }
+      }
+      @media only screen and (max-width: 992px)  {
+        .right-left-slant::before {
+          display: none;
+        }
       }
     }
   }
-  .car-wrap:nth-child(2n) {
-    background-color: $grey-light;
-    .car-right {
-      .photo-wrap {
-        .active {
-          .right-left-slant::before {
-            background-color: $grey-light;
-          }
-        }
-      }
-    }
-    .slider {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
-    }
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
   }
 }
+
 
 .outer {
   max-width: 800px;
