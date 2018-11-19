@@ -52,7 +52,7 @@ use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
 use StandingAndResult\Component\Race;
-
+use SilverStripe\Forms\FileField;
 class Home extends Page
 {
     private static $has_many = [
@@ -168,7 +168,6 @@ SQL;
             $fields->addFieldToTab('Root.About',new TextareaField ('Description','Description'));
             $fields->addFieldToTab('Root.News',new TextField('NewsTitle','News Title'));
             $fields->addFieldToTab('Root.News', UploadField::create('NewsImage'));
-
         });
 
         $fields = parent::getCMSFields();
@@ -179,6 +178,10 @@ SQL;
     public function getRaces()
     {
         return Race::get();
+    }
+    public function Link()
+    {
+        return $this->Link()."#".$this->ID;
     }
 
 }
